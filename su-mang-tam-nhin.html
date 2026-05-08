@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- Design: https://www.figma.com/design/EW4pajEJeWDT97N9asJk0Y/DAV-Alumni?node-id=430-4496 -->
 <html lang="vi">
 
@@ -19,29 +19,17 @@
 <body class="page-mission-vision">
     <header>
         <div class="header-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="d-flex left-header">
-                            <img src="./assets/hat.svg" alt="">
-                            <span>MẠNG LƯỚI CỰU SINH VIÊN HỌC VIỆN NGOẠI GIAO</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="right-header d-flex">
-                            <a href="" class="flex user-action right-header_item">
-                                <img src="./assets/user.svg" alt="">
-                                <span class="text-white">Đăng ký</span>
-                            </a>
-                            <div class="search-action right-header_item">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
-                            <div class="swich-language right-header_item">
-                                <img src="./assets/vn.svg" alt="">
-                                <span>VN</span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="header-top__wrap">
+                <div class="header-top__left">
+                    <span class="header-top__hat"><img src="./assets/hat.svg" alt=""></span>
+                    <span class="header-top__tagline">mạng lưới CỰU SINH VIÊN Học viện Ngoại giao</span>
+                </div>
+                <div class="header-top__right">
+                    <div class="header-top__user-wrap"><button type="button" class="header-top__user" id="header-user-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="header-user-menu" aria-label="Menu tài khoản"><img src="./assets/user.svg" alt="" width="24" height="24"><span class="header-top__user-name">Phúc Nguyễn</span><span class="header-top__user-chev" aria-hidden="true"><i class="fa-solid fa-angle-down"></i></span></button><div class="header-top__dropdown" id="header-user-menu" role="menu" aria-labelledby="header-user-trigger" hidden aria-hidden="true"><div class="header-top__dropdown-head"><p class="header-top__dropdown-name">Nguyễn Văn Phúc</p><p class="header-top__dropdown-email">Phucnguyen@gmail.com</p></div><div class="header-top__dropdown-body"><a href="#" class="header-top__dropdown-item" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-regular fa-user"></i></span><span class="header-top__dropdown-label">Hồ sơ cá nhân</span><span class="header-top__dropdown-chev" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span></a><a href="#" class="header-top__dropdown-item" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-solid fa-lock"></i></span><span class="header-top__dropdown-label">Đổi mật khẩu</span><span class="header-top__dropdown-chev" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span></a><div class="header-top__dropdown-divider" role="separator"></div><a href="#" class="header-top__dropdown-item header-top__dropdown-item--danger" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-solid fa-arrow-right-from-bracket"></i></span><span class="header-top__dropdown-label">Đăng xuất</span></a></div></div></div>
+                    <span class="header-top__divider" aria-hidden="true"></span>
+                    <button type="button" class="header-top__search" aria-label="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <span class="header-top__divider" aria-hidden="true"></span>
+                    <div class="header-top__lang"><img src="./assets/vn.svg" alt="" width="20" height="20"><span>VN</span></div>
                 </div>
             </div>
         </div>
@@ -92,8 +80,12 @@
         <div class="menu-header">
             <div class="container px-4">
                 <ul class="ul-reset">
-                    <li class="is-active">
+                    <li class="is-active menu-header__has-sub">
                         <a href="">Giới thiệu <i class="fa-regular fa-angle-down"></i></a>
+                        <ul class="menu-header__sub">
+                            <li class="is-active"><a href="./su-mang-tam-nhin.html">Sứ mạng &amp; tầm nhìn</a></li>
+                            <li><a href="./ban-dieu-hanh.html">Ban điều hành</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="">Theo dòng ký ức</a>
@@ -283,94 +275,133 @@
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="row position-relative" style="z-index: 1;">
-                <div class="col-lg-5">
-                    <h2 class="ft-title">mạng lưới Cựu sinh viên HỌC VIỆN NGOẠI GIAO (DAV ALUMNI NETWORK)</h2>
-                    <div class="footer-info">
-                        <div class="footer-info-item">
-                            <i class="fa-thin fa-location-dot"></i>
-                            <div class="footer-info-content">
-                                <span>Địa chỉ</span>
-                                <span>Số 69 Chùa Láng, phường Láng Thượng, quận Đống Đa, thành phố Hà Nội.</span>
+    <footer class="site-footer">
+        <div class="site-footer__bg" aria-hidden="true">
+            <img src="./assets/footer-bg.jpg" alt="">
+        </div>
+        <div class="site-footer__inner">
+            <div class="site-footer__grid">
+                <div class="site-footer__col site-footer__col--info">
+                    <div class="site-footer__brand">
+                        <p>mạng lưới Cựu sinh viên</p>
+                        <p>HỌC VIỆN NGOẠI GIAO</p>
+                        <p>(DAV ALUMNI NETWORK)</p>
+                    </div>
+
+                    <div class="site-footer__line">
+                        <span class="site-footer__line-icon" aria-hidden="true">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <div class="site-footer__line-body">
+                            <p class="site-footer__line-title">Địa chỉ:</p>
+                            <p class="site-footer__line-text">Số 69 Chùa Láng, phường Láng Thượng, quận Đống Đa, thành phố Hà Nội.</p>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__split">
+                        <div class="site-footer__line">
+                            <span class="site-footer__line-icon" aria-hidden="true">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <div class="site-footer__line-body">
+                                <p class="site-footer__line-title">Email:</p>
+                                <p class="site-footer__line-text">alumni@dav.edu.vn</p>
                             </div>
                         </div>
-                        <div class="row mt-3">
-                            <div class="col-lg-6">
-                                <div class="footer-info-item">
-                                    <i class="fa-thin fa-envelope"></i>
-                                    <div class="footer-info-content">
-                                        <span>Email</span>
-                                        <span>alumni@dav.edu.vn</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="footer-info-item">
-                                    <i class="fa-thin fa-phone"></i>
-                                    <div class="footer-info-content">
-                                        <span>Điện thoại:</span>
-                                        <span>024.38344540</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mt-3 border-top pt-3">
-                                <div class="footer-info-item">
-                                    <i class="fa-thin fa-envelope"></i>
-                                    <div class="footer-info-content">
-                                        <span>Ban liên lạc:</span>
-                                        <span>Người phụ trách: Nguyễn Văn A - 0984 584 199</span>
-                                    </div>
-                                </div>
+                        <div class="site-footer__line">
+                            <span class="site-footer__line-icon" aria-hidden="true">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <div class="site-footer__line-body">
+                                <p class="site-footer__line-title">Điện thoại:</p>
+                                <p class="site-footer__line-text">024.38344540</p>
                             </div>
                         </div>
                     </div>
+
+                    <hr class="site-footer__rule">
+
+                    <div class="site-footer__line">
+                        <span class="site-footer__line-icon" aria-hidden="true">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        <div class="site-footer__line-body">
+                            <p class="site-footer__line-title">Ban liên lạc:</p>
+                            <p class="site-footer__line-italic">Người phụ trách: Nguyễn Văn A - 0984 584 199</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 ps-md-5">
-                    <h2 class="ft-title">liên kết nhanh</h2>
-                    <ul class="ul-reset menu-ft">
-                        <li><a href="">Giới thiệu</a></li>
-                        <li><a href="">Theo dòng ký ức</a></li>
-                        <li><a href="">Tin tức - Sự kiện</a></li>
-                        <li><a href="">mạng lưới Alumni</a></li>
-                        <li><a href="">Vì thế hệ tương lai</a></li>
-                        <li><a href="">Cơ hội việc làm</a></li>
-                        <li><a href="">liên hệ</a></li>
-                        <li><a href="">Quy chế hội viên</a></li>
+
+                <div class="site-footer__col site-footer__col--links">
+                    <p class="site-footer__heading">liên kết nhanh</p>
+                    <ul class="site-footer__links">
+                        <li><a href="./su-mang-tam-nhin.html">Giới thiệu</a></li>
+                        <li><a href="./theo-dong-ky-uc.html">Theo dòng ký ức</a></li>
+                        <li><a href="./tin-tuc.html">Tin tức - Sự kiện</a></li>
+                        <li><a href="./dav-alumni-cac-khoa.html">mạng lưới Alumni</a></li>
+                        <li><a href="./vi-the-he-tuong-lai.html">Vì thế hệ tương lai</a></li>
+                        <li><a href="./tuyen-dung.html">Cơ hội việc làm</a></li>
+                        <li><a href="./lien-he.html">liên hệ</a></li>
+                        <li><a href="#">Quy chế hội viên</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <h2 class="ft-title">Đăng ký nhận tin</h2>
-                    <form action="" class="subcribe-form">
-                        <input type="email" placeholder="Email của bạn *" required>
-                        <button type="submit">Send <i class="fa-solid fa-paper-plane-top"></i></button>
+
+                <div class="site-footer__col site-footer__col--news">
+                    <p class="site-footer__heading">Đăng ký nhận tin</p>
+                    <form class="site-footer__subscribe" action="#" method="post" novalidate>
+                        <label class="site-footer__sr-only" for="footer-news-email">Email của bạn</label>
+                        <div class="site-footer__subscribe-field">
+                            <input id="footer-news-email" type="email" name="email" placeholder="Email của bạn *">
+                            <button type="submit" class="site-footer__subscribe-send">
+                                <span>Send</span>
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </div>
                     </form>
-                    <h2 class="ft-title mt-4">Kết nối với chúng tôi</h2>
-                    <div class="d-flex mt-3 social">
-                        <div class="social-icon"><i class="fa-brands fa-facebook-f"></i></div>
-                        <span>Fanpage</span>
-                    </div>
-                    <div class="d-flex mt-3 social">
-                        <div class="social-icon"><i class="fa-solid fa-users"></i></div>
-                        <span>Group cộng đồng facebook</span>
-                    </div>
-                    <div class="d-flex mt-3 social">
-                        <div class="social-icon"><i class="fa-brands fa-tiktok"></i></div>
-                        <span>hocvienngoaigiao.dav</span>
-                    </div>
-                    <div class="d-flex mt-3 social">
-                        <div class="social-icon"><i class="fa-brands fa-instagram"></i></div>
-                        <span>hocvienngoaigiao.dav</span>
-                    </div>
+
+                    <p class="site-footer__heading">Kết nối với chúng tôi</p>
+                    <ul class="site-footer__social">
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--fb" aria-hidden="true">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </span>
+                                <span>Fanpage</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--fb-group" aria-hidden="true">
+                                    <i class="fa-solid fa-people-group"></i>
+                                </span>
+                                <span>Group cộng đồng facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--tiktok" aria-hidden="true">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </span>
+                                <span>hocvienngoaigiao.dav</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--ig" aria-hidden="true">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                                <span>hocvienngoaigiao.dav</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <small class="position-relative copy-right" style="z-index: 1;">Copyright © 2026 DAV Alumni. All rights
-                reserved.</small>
+            <p class="site-footer__copyright">Copyright © 2026 DAV Alumni. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/header-user-menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ doanh nghiệp | DAV Alumni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="page-profile-dav page-business-profile-dav">
+    <header class="app-topbar">
+        <div class="app-topbar__left">
+            <button type="button" class="app-topbar__menu" aria-label="Mở menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <a href="./index.html" class="app-topbar__brand">
+                <span class="app-topbar__logo">
+                    <img src="./assets/dav-form-logo.png" alt="">
+                </span>
+                <span class="app-topbar__brand-text">mạng lưới CỰU SINH VIÊN Học viện Ngoại giao</span>
+            </a>
+        </div>
+
+        <div class="app-topbar__right">
+            <button type="button" class="app-topbar__notify" aria-label="Thông báo">
+                <i class="fa-regular fa-bell" aria-hidden="true"></i>
+                <span class="app-topbar__notify-badge" aria-label="2 thông báo chưa đọc">2</span>
+            </button>
+
+            <button type="button" class="app-topbar__user" aria-haspopup="menu">
+                <span class="app-topbar__avatar">
+                    <img src="./assets/user-avatar.png" alt="">
+                    <span class="app-topbar__avatar-status" aria-hidden="true"></span>
+                </span>
+                <span class="app-topbar__user-name">Phúc Nguyễn Văn</span>
+                <i class="app-topbar__user-chev fa-solid fa-caret-down" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="app-shell">
+        <aside class="app-sidebar app-sidebar--business" aria-label="Menu doanh nghiệp">
+            <div class="app-sidebar__profile">
+                <div class="app-sidebar__avatar app-sidebar__avatar--business">
+                    <img src="./assets/misa-logo.png" alt="Logo Công ty cổ phần Misa">
+                    <span class="app-sidebar__verified" aria-label="Đã xác minh">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <p class="app-sidebar__name">Công ty cổ phần Misa</p>
+            </div>
+
+            <nav class="app-sidebar__nav">
+                <a href="./ho-so-doanh-nghiep.html" class="app-sidebar__nav-item is-active" aria-current="page">
+                    <i class="app-sidebar__nav-icon fa-regular fa-building" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Hồ sơ doanh nghiệp</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a href="./tuyen-dung.html" class="app-sidebar__nav-item">
+                    <i class="app-sidebar__nav-icon fa-solid fa-briefcase" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Tin tuyển dụng</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a href="./doi-mat-khau.html" class="app-sidebar__nav-item">
+                    <i class="app-sidebar__nav-icon fa-solid fa-lock" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Đổi mật khẩu</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+
+                <hr class="app-sidebar__divider">
+
+                <a href="./dang-nhap.html" class="app-sidebar__nav-item app-sidebar__nav-item--logout">
+                    <i class="app-sidebar__nav-icon fa-solid fa-right-from-bracket" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Đăng xuất</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="app-main">
+            <section class="profile-card business-profile" aria-labelledby="business-profile-title">
+                <header class="profile-card__head">
+                    <h1 class="profile-card__title" id="business-profile-title">Hồ sơ doanh nghiệp</h1>
+                    <button type="button" class="profile-card__btn profile-card__btn--edit" data-profile-edit>
+                        <i class="fa-solid fa-pen" aria-hidden="true"></i>
+                        <span>Chỉnh sửa hồ sơ</span>
+                    </button>
+                </header>
+
+                <form id="business-profile-form" class="profile-card__form" data-profile-form novalidate>
+                    <div class="register-form__sections">
+                        <section class="register-form__section">
+                            <h2 class="register-form__section-title">Thông tin doanh nghiệp</h2>
+                            <div class="register-form__fields">
+                                <div class="register-form__row">
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-legal-name">Tên pháp lý Tổ chức/ Doanh nghiệp <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input">
+                                            <input id="bp-legal-name" name="legal-name" type="text" value="Công ty cổ phần Misa" required disabled>
+                                        </div>
+                                    </div>
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-tax">Mã số thuế <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input">
+                                            <input id="bp-tax" name="tax-code" type="text" value="0101243150" required disabled>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="register-form__row">
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-website">Website <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input">
+                                            <input id="bp-website" name="website" type="url" value="https://www.misa.vn" required disabled>
+                                        </div>
+                                    </div>
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-license">Giấy phép kinh doanh <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <label class="register-form__input register-form__input--file" for="bp-license">
+                                            <i class="fa-solid fa-paperclip register-form__file-clip" aria-hidden="true"></i>
+                                            <span class="register-form__file-name" data-placeholder="Chọn tệp...">gpkd.pdf</span>
+                                            <i class="fa-solid fa-cloud-arrow-up register-form__file-upload" aria-hidden="true"></i>
+                                            <input id="bp-license" name="license" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required disabled>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="register-form__row">
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-industry">Lĩnh vực hoạt động <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input">
+                                            <input id="bp-industry" name="industry" type="text" value="Phần mềm và dịch vụ công nghệ thông tin" required disabled>
+                                        </div>
+                                    </div>
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-province">Tỉnh thành <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input register-form__input--select">
+                                            <select id="bp-province" name="province" required disabled>
+                                                <option value="" disabled>--Tỉnh thành--</option>
+                                                <option selected>Hà Nội</option>
+                                                <option>TP. Hồ Chí Minh</option>
+                                                <option>Đà Nẵng</option>
+                                                <option>Hải Phòng</option>
+                                                <option>Cần Thơ</option>
+                                            </select>
+                                            <i class="register-form__chevron fa-solid fa-chevron-down" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="register-form__row">
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-address">Địa chỉ cụ thể <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input">
+                                            <input id="bp-address" name="address" type="text" value="Tầng 9, Tòa nhà Technosoft, Số 6 ngõ 15 Duy Tân, Cầu Giấy" required disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="register-form__section">
+                            <h2 class="register-form__section-title">Thông tin người đại diện</h2>
+                            <div class="register-form__fields">
+                                <div class="register-form__row">
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-rep-name">Họ và tên <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input">
+                                            <input id="bp-rep-name" name="rep-name" type="text" value="Nguyễn Văn Phúc" required disabled>
+                                        </div>
+                                    </div>
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-rep-position">Chức vụ <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input">
+                                            <input id="bp-rep-position" name="rep-position" type="text" value="Trưởng phòng nhân sự" required disabled>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="register-form__row">
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-rep-phone">Số điện thoại <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input">
+                                            <input id="bp-rep-phone" name="rep-phone" type="tel" value="0981753899" required disabled>
+                                        </div>
+                                    </div>
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-rep-email">Email <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input">
+                                            <input id="bp-rep-email" name="rep-email" type="email" value="phucnguyen@misa.vn" required disabled>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="register-form__row">
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-rep-major">Chuyên ngành <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input register-form__input--select">
+                                            <select id="bp-rep-major" name="rep-major" required disabled>
+                                                <option selected>Quan hệ quốc tế</option>
+                                                <option>Luật quốc tế</option>
+                                                <option>Kinh tế đối ngoại</option>
+                                                <option>Truyền thông quốc tế</option>
+                                            </select>
+                                            <i class="register-form__chevron fa-solid fa-chevron-down" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="register-form__field">
+                                        <label class="register-form__label" for="bp-rep-class">Khoá học <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <div class="register-form__input register-form__input--select">
+                                            <select id="bp-rep-class" name="rep-class" required disabled>
+                                                <option value="" disabled selected>--Chọn--</option>
+                                                <option>K42</option>
+                                                <option>K43</option>
+                                                <option>K44</option>
+                                                <option>K45</option>
+                                                <option>K46</option>
+                                                <option>K47</option>
+                                                <option>K48</option>
+                                            </select>
+                                            <i class="register-form__chevron fa-solid fa-chevron-down" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="profile-card__actions" data-profile-actions hidden>
+                        <button type="button" class="profile-card__btn profile-card__btn--cancel" data-profile-cancel>
+                            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                            <span>Huỷ</span>
+                        </button>
+                        <button type="submit" class="profile-card__btn profile-card__btn--save" data-profile-save>
+                            <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            <span>Cập nhật</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/dang-ky-form.js"></script>
+    <script src="./js/ho-so-ca-nhan.js"></script>
+</body>
+
+</html>

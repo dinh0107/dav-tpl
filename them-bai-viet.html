@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm bài viết | DAV Alumni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="page-knowledge-dav page-add-article-dav">
+    <header class="app-topbar">
+        <div class="app-topbar__left">
+            <button type="button" class="app-topbar__menu" aria-label="Mở menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <a href="./index.html" class="app-topbar__brand">
+                <span class="app-topbar__logo">
+                    <img src="./assets/dav-form-logo.png" alt="">
+                </span>
+                <span class="app-topbar__brand-text">mạng lưới CỰU SINH VIÊN Học viện Ngoại giao</span>
+            </a>
+        </div>
+
+        <div class="app-topbar__right">
+            <button type="button" class="app-topbar__notify" aria-label="Thông báo">
+                <i class="fa-regular fa-bell" aria-hidden="true"></i>
+                <span class="app-topbar__notify-badge" aria-label="2 thông báo chưa đọc">2</span>
+            </button>
+
+            <button type="button" class="app-topbar__user" aria-haspopup="menu">
+                <span class="app-topbar__avatar">
+                    <img src="./assets/user-avatar.png" alt="">
+                    <span class="app-topbar__avatar-status" aria-hidden="true"></span>
+                </span>
+                <span class="app-topbar__user-name">Phúc Nguyễn Văn</span>
+                <i class="app-topbar__user-chev fa-solid fa-caret-down" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="app-shell">
+        <aside class="app-sidebar" aria-label="Menu tài khoản">
+            <div class="app-sidebar__profile">
+                <div class="app-sidebar__avatar">
+                    <img src="./assets/user-avatar-large.png" alt="Ảnh đại diện">
+                    <span class="app-sidebar__verified" aria-label="Đã xác minh">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <p class="app-sidebar__name">Nguyễn Văn Phúc</p>
+                <div class="app-sidebar__id">
+                    <span class="app-sidebar__id-text">CSVKx-yyy</span>
+                    <button type="button" class="app-sidebar__copy" aria-label="Sao chép mã">
+                        <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="app-sidebar__nav">
+                <a href="./ho-so-ca-nhan.html" class="app-sidebar__nav-item">
+                    <i class="app-sidebar__nav-icon fa-regular fa-user" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Hồ sơ cá nhân</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a href="./kien-thuc-chia-se.html" class="app-sidebar__nav-item is-active" aria-current="page">
+                    <i class="app-sidebar__nav-icon fa-regular fa-bookmark" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Kiến thức chia sẻ</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="app-sidebar__nav-item">
+                    <i class="app-sidebar__nav-icon fa-regular fa-calendar" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Sự kiện</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="app-sidebar__nav-item">
+                    <i class="app-sidebar__nav-icon fa-solid fa-lock" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Đổi mật khẩu</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+
+                <hr class="app-sidebar__divider">
+
+                <a href="./dang-nhap.html" class="app-sidebar__nav-item app-sidebar__nav-item--logout">
+                    <i class="app-sidebar__nav-icon fa-solid fa-right-from-bracket" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Đăng xuất</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="app-main">
+            <div class="article-form">
+                <a class="article-form__back" href="./kien-thuc-chia-se.html">
+                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    <span>Thêm mới bài viết</span>
+                </a>
+
+                <form class="article-form__card" id="article-form" novalidate>
+                    <section class="article-form__section">
+                        <h2 class="article-form__section-title">Thông tin bài viết</h2>
+
+                        <div class="article-form__fields">
+                            <div class="register-form__field">
+                                <label class="register-form__label" for="ar-banner">Banner <span class="register-form__req" aria-hidden="true">*</span></label>
+                                <div class="article-banner">
+                                    <div class="article-banner__thumb" aria-hidden="true">
+                                        <i class="fa-regular fa-image"></i>
+                                    </div>
+                                    <label class="article-banner__upload">
+                                        <span class="article-banner__choose">Chọn tệp</span>
+                                        <span class="article-banner__name" data-placeholder="Không có file nào được chọn">Không có file nào được chọn</span>
+                                        <input id="ar-banner" type="file" name="banner" accept="image/*">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="register-form__row">
+                                <div class="register-form__field">
+                                    <label class="register-form__label" for="ar-title">Tiêu đề bài viết <span class="register-form__req" aria-hidden="true">*</span></label>
+                                    <div class="register-form__input">
+                                        <input id="ar-title" type="text" name="title" value="Nghiên cứu: Tác động của AI đến Ngoại giao hiện đại" required>
+                                    </div>
+                                </div>
+                                <div class="register-form__field">
+                                    <label class="register-form__label" for="ar-category">Chuyên mục <span class="register-form__req" aria-hidden="true">*</span></label>
+                                    <div class="register-form__input register-form__input--select">
+                                        <select id="ar-category" name="category" required>
+                                            <option value="" disabled selected>--Chọn--</option>
+                                            <option>Nghiên cứu khoa học</option>
+                                            <option>Kinh nghiệm nghề nghiệp</option>
+                                            <option>Hoạt động cộng đồng</option>
+                                        </select>
+                                        <i class="register-form__chevron fa-solid fa-chevron-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="register-form__field">
+                                <label class="register-form__label" for="ar-sapo">Mô tả ngắn (Sapo) <span class="register-form__req" aria-hidden="true">*</span></label>
+                                <div class="register-form__input register-form__input--textarea">
+                                    <textarea id="ar-sapo" name="sapo" rows="3" placeholder="Đoạn mở đầu thu hút người đọc..." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="article-form__section">
+                        <h2 class="article-form__section-title">Nội dung bài viết (Markdown/Text)</h2>
+                        <textarea id="ar-content" name="content"></textarea>
+                    </section>
+
+                    <div class="article-form__footer">
+                        <label class="article-form__check">
+                            <input type="checkbox" name="save-and-add" value="1">
+                            <span class="article-form__check-mark" aria-hidden="true">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="article-form__check-text">Lưu và thêm tiếp</span>
+                        </label>
+
+                        <div class="article-form__actions">
+                            <a class="article-form__btn article-form__btn--ghost" href="./kien-thuc-chia-se.html">Huỷ</a>
+                            <button type="submit" class="article-form__btn article-form__btn--primary">Đăng bài</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/ho-so-ca-nhan.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+    <script src="./js/them-bai-viet.js"></script>
+</body>
+
+</html>

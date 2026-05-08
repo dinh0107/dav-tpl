@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng tin tuyển dụng | DAV Alumni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="page-profile-dav page-business-profile-dav page-add-article-dav page-add-job-dav">
+    <header class="app-topbar">
+        <div class="app-topbar__left">
+            <button type="button" class="app-topbar__menu" aria-label="Mở menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <a href="./index.html" class="app-topbar__brand">
+                <span class="app-topbar__logo">
+                    <img src="./assets/dav-form-logo.png" alt="">
+                </span>
+                <span class="app-topbar__brand-text">mạng lưới CỰU SINH VIÊN Học viện Ngoại giao</span>
+            </a>
+        </div>
+
+        <div class="app-topbar__right">
+            <button type="button" class="app-topbar__notify" aria-label="Thông báo">
+                <i class="fa-regular fa-bell" aria-hidden="true"></i>
+                <span class="app-topbar__notify-badge" aria-label="2 thông báo chưa đọc">2</span>
+            </button>
+
+            <button type="button" class="app-topbar__user" aria-haspopup="menu">
+                <span class="app-topbar__avatar">
+                    <img src="./assets/user-avatar.png" alt="">
+                    <span class="app-topbar__avatar-status" aria-hidden="true"></span>
+                </span>
+                <span class="app-topbar__user-name">Phúc Nguyễn Văn</span>
+                <i class="app-topbar__user-chev fa-solid fa-caret-down" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="app-shell">
+        <aside class="app-sidebar app-sidebar--business" aria-label="Menu doanh nghiệp">
+            <div class="app-sidebar__profile">
+                <div class="app-sidebar__avatar app-sidebar__avatar--business">
+                    <img src="./assets/misa-logo.png" alt="Logo Công ty cổ phần Misa">
+                    <span class="app-sidebar__verified" aria-label="Đã xác minh">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <p class="app-sidebar__name">Công ty cổ phần Misa</p>
+            </div>
+
+            <nav class="app-sidebar__nav">
+                <a href="./ho-so-doanh-nghiep.html" class="app-sidebar__nav-item">
+                    <i class="app-sidebar__nav-icon fa-regular fa-building" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Hồ sơ doanh nghiệp</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a href="./tin-tuyen-dung-admin.html" class="app-sidebar__nav-item is-active" aria-current="page">
+                    <i class="app-sidebar__nav-icon fa-solid fa-briefcase" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Tin tuyển dụng</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a href="./doi-mat-khau.html" class="app-sidebar__nav-item">
+                    <i class="app-sidebar__nav-icon fa-solid fa-lock" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Đổi mật khẩu</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+
+                <hr class="app-sidebar__divider">
+
+                <a href="./dang-nhap.html" class="app-sidebar__nav-item app-sidebar__nav-item--logout">
+                    <i class="app-sidebar__nav-icon fa-solid fa-right-from-bracket" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Đăng xuất</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="app-main">
+            <div class="article-form addjob-form">
+                <a class="article-form__back" href="./tin-tuyen-dung-admin.html">
+                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    <span>Thêm mới bài viết</span>
+                </a>
+
+                <form class="article-form__card" id="addjob-form" novalidate>
+                    <section class="article-form__section addjob-form__section">
+                        <h2 class="addjob-form__h2">Thông tin chung</h2>
+
+                        <div class="register-form__fields">
+                            <div class="register-form__field">
+                                <label class="register-form__label" for="aj-title">Tiêu đề tin <span class="register-form__req" aria-hidden="true">*</span></label>
+                                <div class="register-form__input">
+                                    <input id="aj-title" type="text" name="title" value="Nhân viên kinh doanh" required>
+                                </div>
+                            </div>
+
+                            <div class="register-form__row">
+                                <div class="register-form__field">
+                                    <label class="register-form__label" for="aj-spec">Vị trí chuyên môn (Specialization) <span class="register-form__req" aria-hidden="true">*</span></label>
+                                    <div class="register-form__input">
+                                        <input id="aj-spec" type="text" name="specialization" placeholder="Vị trí chuyên môn" required>
+                                    </div>
+                                </div>
+                                <div class="register-form__field">
+                                    <label class="register-form__label" for="aj-level">Cấp bậc<span class="register-form__req" aria-hidden="true">*</span></label>
+                                    <div class="register-form__input register-form__input--select">
+                                        <select id="aj-level" name="level" required>
+                                            <option value="" disabled selected>--Chọn--</option>
+                                            <option>Thực tập sinh</option>
+                                            <option>Nhân viên</option>
+                                            <option>Trưởng nhóm</option>
+                                            <option>Quản lý</option>
+                                            <option>Giám đốc</option>
+                                        </select>
+                                        <i class="register-form__chevron fa-solid fa-chevron-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="register-form__row">
+                                <div class="register-form__field">
+                                    <label class="register-form__label" for="aj-jobtype">Loại công việc <span class="register-form__req" aria-hidden="true">*</span></label>
+                                    <div class="register-form__input register-form__input--select">
+                                        <select id="aj-jobtype" name="jobtype" required>
+                                            <option selected>Toàn thời gian</option>
+                                            <option>Bán thời gian</option>
+                                            <option>Thực tập</option>
+                                            <option>Cộng tác viên</option>
+                                            <option>Remote</option>
+                                        </select>
+                                        <i class="register-form__chevron fa-solid fa-chevron-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="register-form__field">
+                                    <div class="addjob-form__label-row">
+                                        <label class="register-form__label" for="aj-salary-min">Mức lương <span class="register-form__req" aria-hidden="true">*</span></label>
+                                        <label class="addjob-form__check">
+                                            <input type="checkbox" name="salary-negotiable" data-salary-negotiable>
+                                            <span class="addjob-form__check-mark" aria-hidden="true">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                            <span class="addjob-form__check-text">Thoả thuận</span>
+                                        </label>
+                                    </div>
+                                    <div class="addjob-form__salary" data-salary-group>
+                                        <input id="aj-salary-min" type="text" name="salary-min" placeholder="0" inputmode="numeric" aria-label="Mức lương tối thiểu">
+                                        <span class="addjob-form__salary-sep" aria-hidden="true">-</span>
+                                        <input type="text" name="salary-max" placeholder="0" inputmode="numeric" aria-label="Mức lương tối đa">
+                                        <div class="addjob-form__salary-currency">
+                                            <select name="salary-currency" aria-label="Đơn vị tiền tệ">
+                                                <option>VNĐ</option>
+                                                <option>USD</option>
+                                            </select>
+                                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="register-form__row">
+                                <div class="register-form__field">
+                                    <label class="register-form__label" for="aj-location">Vị trí làm việc</label>
+                                    <div class="register-form__input">
+                                        <input id="aj-location" type="text" name="location" value="Hà Nội">
+                                    </div>
+                                </div>
+                                <div class="register-form__field">
+                                    <label class="register-form__label" for="aj-deadline">Hạn tuyển dụng<span class="register-form__req" aria-hidden="true">*</span></label>
+                                    <div class="register-form__input addjob-form__date">
+                                        <input id="aj-deadline" type="date" name="deadline" required>
+                                        <i class="addjob-form__date-icon fa-regular fa-calendar" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="article-form__section addjob-form__section">
+                        <h2 class="addjob-form__h2">Thông tin chi tiết</h2>
+
+                        <div class="addjob-form__editor">
+                            <h3 class="addjob-form__h3">Mô tả công việc</h3>
+                            <textarea id="aj-desc" name="description" data-job-editor></textarea>
+                        </div>
+
+                        <div class="addjob-form__editor">
+                            <h3 class="addjob-form__h3">Yêu cầu công việc</h3>
+                            <textarea id="aj-req" name="requirements" data-job-editor></textarea>
+                        </div>
+
+                        <div class="addjob-form__editor">
+                            <h3 class="addjob-form__h3">Quyền lợi</h3>
+                            <textarea id="aj-benefits" name="benefits" data-job-editor></textarea>
+                        </div>
+                    </section>
+
+                    <div class="article-form__footer">
+                        <label class="article-form__check">
+                            <input type="checkbox" name="save-and-add" value="1">
+                            <span class="article-form__check-mark" aria-hidden="true">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="article-form__check-text">Lưu và thêm tiếp</span>
+                        </label>
+
+                        <div class="article-form__actions">
+                            <a class="article-form__btn article-form__btn--ghost" href="./tin-tuyen-dung-admin.html">Huỷ</a>
+                            <button type="submit" class="article-form__btn article-form__btn--primary">Đăng tin</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+    <script src="./js/dang-tin-tuyen-dung.js"></script>
+</body>
+
+</html>

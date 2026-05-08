@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<!-- Design: https://www.figma.com/design/EW4pajEJeWDT97N9asJk0Y/DAV-Alumni?node-id=716-8222 -->
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cán bộ, giảng viên qua các thời kỳ | DAV Alumni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="page-staff-faculty">
+    <header>
+        <div class="header-top"><div class="header-top__wrap"><div class="header-top__left"><span class="header-top__hat"><img src="./assets/hat.svg" alt=""></span><span class="header-top__tagline">mạng lưới CỰU SINH VIÊN Học viện Ngoại giao</span></div><div class="header-top__right"><div class="header-top__user-wrap"><button type="button" class="header-top__user" id="header-user-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="header-user-menu" aria-label="Menu tài khoản"><img src="./assets/user.svg" alt="" width="24" height="24"><span class="header-top__user-name">Phúc Nguyễn</span><span class="header-top__user-chev" aria-hidden="true"><i class="fa-solid fa-angle-down"></i></span></button><div class="header-top__dropdown" id="header-user-menu" role="menu" aria-labelledby="header-user-trigger" hidden aria-hidden="true"><div class="header-top__dropdown-head"><p class="header-top__dropdown-name">Nguyễn Văn Phúc</p><p class="header-top__dropdown-email">Phucnguyen@gmail.com</p></div><div class="header-top__dropdown-body"><a href="#" class="header-top__dropdown-item" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-regular fa-user"></i></span><span class="header-top__dropdown-label">Hồ sơ cá nhân</span><span class="header-top__dropdown-chev" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span></a><a href="#" class="header-top__dropdown-item" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-solid fa-lock"></i></span><span class="header-top__dropdown-label">Đổi mật khẩu</span><span class="header-top__dropdown-chev" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span></a><div class="header-top__dropdown-divider" role="separator"></div><a href="#" class="header-top__dropdown-item header-top__dropdown-item--danger" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-solid fa-arrow-right-from-bracket"></i></span><span class="header-top__dropdown-label">Đăng xuất</span></a></div></div></div><span class="header-top__divider" aria-hidden="true"></span><button type="button" class="header-top__search" aria-label="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button><span class="header-top__divider" aria-hidden="true"></span><div class="header-top__lang"><img src="./assets/vn.svg" alt="" width="20" height="20"><span>VN</span></div></div></div></div>
+        <div class="inner-header"><div class="container"><div class="row align-items-center"><div class="col-lg-3"><a href="/"><img src="./assets/logo.png" alt="DAV" class="logo"></a></div><div class="col-lg-9 d-flex align-items-center justify-content-around flex-wrap gap-3"><a href="mailto:alumni@dav.edu.vn" class="info-item"><div class="info-item_icon"><i class="fa-solid fa-envelope"></i></div><div class="info-item_content"><span class="info-item_title">Email:</span><span class="info-item_desc">alumni@dav.edu.vn</span></div></a><a href="tel:02438344540" class="info-item"><div class="info-item_icon"><i class="fa-solid fa-phone-volume"></i></div><div class="info-item_content"><span class="info-item_title">Điện Thoại:</span><span class="info-item_desc">024.38344540</span></div></a><div class="info-item"><div class="info-item_icon"><i class="fa-solid fa-location-dot"></i></div><div class="info-item_content"><span class="info-item_title">Địa Chỉ:</span><span class="info-item_desc">Số 69 Chùa Láng, Láng Thượng, Đống Đa, TP Hà Nội.</span></div></div><a href="" class="login-icon"><i class="fa-solid fa-key"></i><span class="text-white">Đăng nhập</span></a></div></div></div></div>
+        <div class="menu-header"><div class="container px-4"><ul class="ul-reset"><li class="menu-header__has-sub"><a href="">Giới thiệu <i class="fa-regular fa-angle-down"></i></a><ul class="menu-header__sub"><li><a href="./su-mang-tam-nhin.html">Sứ mạng &amp; tầm nhìn</a></li><li><a href="./ban-dieu-hanh.html">Ban điều hành</a></li></ul></li><li><a href="">Theo dòng ký ức</a></li><li><a href="">Tin tức - Sự kiện <i class="fa-regular fa-angle-down"></i></a></li><li class="is-active"><a href="">Mạng lưới Alumni</a></li><li><a href="">Vì thế hệ tương lai</a></li><li><a href="">Cơ hội việc làm</a></li></ul></div></div>
+    </header>
+
+    <main>
+        <section class="staff-directory-hero">
+            <img src="./assets/Rectangle 3464223 (1).jpg" alt="Cán bộ, giảng viên Học viện Ngoại giao" class="staff-directory-hero__image">
+            <div class="staff-directory-hero__overlay" aria-hidden="true"></div>
+            <div class="container staff-directory-hero__title-wrap">
+                <h1 class="staff-directory-hero__title">Cán bộ, giảng viên qua các thời kỳ</h1>
+            </div>
+        </section>
+
+        <nav class="site-breadcrumb site-breadcrumb--topline" aria-label="Breadcrumb">
+            <div class="container">
+                <ol class="site-breadcrumb__list">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li><span class="site-breadcrumb__sep"><i class="fa-solid fa-chevron-right"></i></span></li>
+                    <li><a href="">Mạng lưới Alumni</a></li>
+                    <li><span class="site-breadcrumb__sep"><i class="fa-solid fa-chevron-right"></i></span></li>
+                    <li><span class="site-breadcrumb__current">Cán bộ, giảng viên qua các thời kỳ</span></li>
+                </ol>
+            </div>
+        </nav>
+
+        <section class="staff-directory">
+            <div class="container staff-directory__inner">
+                <div class="staff-directory__toolbar">
+                    <div class="staff-directory__col-left">
+                        <p class="staff-directory__intro">Nơi lưu giữ và vinh danh những đóng góp của các thế hệ thầy cô, cán bộ đã và đang cống hiến cho sự nghiệp đào tạo tại Học viện Ngoại giao.</p>
+                        <nav class="staff-directory__tabs" aria-label="Lọc nhóm">
+                            <a href="#" class="staff-directory__tab is-active" aria-current="page">Tất cả</a>
+                            <a href="#" class="staff-directory__tab">cán bộ</a>
+                            <a href="#" class="staff-directory__tab">giảng viên cơ hữu</a>
+                            <a href="#" class="staff-directory__tab">giảng viên thỉnh giảng</a>
+                        </nav>
+                    </div>
+                    <label class="staff-directory-search" aria-label="Tìm kiếm">
+                        <input type="search" placeholder="Tìm kiếm tin..">
+                        <span class="staff-directory-search__btn"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </label>
+                </div>
+
+                <div class="staff-directory__body">
+                    <div class="staff-directory__grid">
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--transferred">Đã chuyển công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--transferred">Đã chuyển công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--transferred">Đã chuyển công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--transferred">Đã chuyển công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--transferred">Đã chuyển công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--transferred">Đã chuyển công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                        <a href="chi-tiet-cuu-sinh-vien.html" class="staff-card"><span class="staff-card__head"><span class="staff-card__avatar"><img src="./assets/Rectangle 3464228 (1).jpg" alt=""></span><span class="staff-card__identity"><span class="staff-card__name">Trần Hoàng Nam</span><span class="staff-card__role">Giảng viên cơ hữu</span></span></span><span class="staff-card__status staff-card__status--working">Đang công tác</span><span class="staff-card__meta"><span class="staff-card__meta-row"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Khoa Chính trị quốc tế</span></span><span class="staff-card__meta-row"><i class="fa-regular fa-calendar" aria-hidden="true"></i><span>2010 - Nay</span></span><span class="staff-card__meta-row"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Quan hệ Quốc tế, Ngoại giao</span></span></span></a>
+                    </div>
+
+                    <nav class="staff-directory-pagination" aria-label="Phân trang">
+                        <a href="" class="staff-directory-pagination__arrow staff-directory-pagination__arrow--prev" aria-label="Trang trước"><i class="fa-solid fa-chevron-left"></i></a>
+                        <a href="" class="is-active" aria-current="page">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <span class="staff-directory-pagination__ellipsis" aria-hidden="true">...</span>
+                        <a href="">8</a>
+                        <a href="">9</a>
+                        <a href="">10</a>
+                        <a href="" class="staff-directory-pagination__arrow staff-directory-pagination__arrow--next" aria-label="Trang sau"><i class="fa-solid fa-chevron-right"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__bg" aria-hidden="true">
+            <img src="./assets/footer-bg.jpg" alt="">
+        </div>
+        <div class="site-footer__inner">
+            <div class="site-footer__grid">
+                <div class="site-footer__col site-footer__col--info">
+                    <div class="site-footer__brand">
+                        <p>mạng lưới Cựu sinh viên</p>
+                        <p>HỌC VIỆN NGOẠI GIAO</p>
+                        <p>(DAV ALUMNI NETWORK)</p>
+                    </div>
+
+                    <div class="site-footer__line">
+                        <span class="site-footer__line-icon" aria-hidden="true">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <div class="site-footer__line-body">
+                            <p class="site-footer__line-title">Địa chỉ:</p>
+                            <p class="site-footer__line-text">Số 69 Chùa Láng, phường Láng Thượng, quận Đống Đa, thành phố Hà Nội.</p>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__split">
+                        <div class="site-footer__line">
+                            <span class="site-footer__line-icon" aria-hidden="true">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <div class="site-footer__line-body">
+                                <p class="site-footer__line-title">Email:</p>
+                                <p class="site-footer__line-text">alumni@dav.edu.vn</p>
+                            </div>
+                        </div>
+                        <div class="site-footer__line">
+                            <span class="site-footer__line-icon" aria-hidden="true">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <div class="site-footer__line-body">
+                                <p class="site-footer__line-title">Điện thoại:</p>
+                                <p class="site-footer__line-text">024.38344540</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="site-footer__rule">
+
+                    <div class="site-footer__line">
+                        <span class="site-footer__line-icon" aria-hidden="true">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        <div class="site-footer__line-body">
+                            <p class="site-footer__line-title">Ban liên lạc:</p>
+                            <p class="site-footer__line-italic">Người phụ trách: Nguyễn Văn A - 0984 584 199</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-footer__col site-footer__col--links">
+                    <p class="site-footer__heading">liên kết nhanh</p>
+                    <ul class="site-footer__links">
+                        <li><a href="./su-mang-tam-nhin.html">Giới thiệu</a></li>
+                        <li><a href="./theo-dong-ky-uc.html">Theo dòng ký ức</a></li>
+                        <li><a href="./tin-tuc.html">Tin tức - Sự kiện</a></li>
+                        <li><a href="./dav-alumni-cac-khoa.html">mạng lưới Alumni</a></li>
+                        <li><a href="./vi-the-he-tuong-lai.html">Vì thế hệ tương lai</a></li>
+                        <li><a href="./tuyen-dung.html">Cơ hội việc làm</a></li>
+                        <li><a href="./lien-he.html">liên hệ</a></li>
+                        <li><a href="#">Quy chế hội viên</a></li>
+                    </ul>
+                </div>
+
+                <div class="site-footer__col site-footer__col--news">
+                    <p class="site-footer__heading">Đăng ký nhận tin</p>
+                    <form class="site-footer__subscribe" action="#" method="post" novalidate>
+                        <label class="site-footer__sr-only" for="footer-news-email">Email của bạn</label>
+                        <div class="site-footer__subscribe-field">
+                            <input id="footer-news-email" type="email" name="email" placeholder="Email của bạn *">
+                            <button type="submit" class="site-footer__subscribe-send">
+                                <span>Send</span>
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <p class="site-footer__heading">Kết nối với chúng tôi</p>
+                    <ul class="site-footer__social">
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--fb" aria-hidden="true">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </span>
+                                <span>Fanpage</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--fb-group" aria-hidden="true">
+                                    <i class="fa-solid fa-people-group"></i>
+                                </span>
+                                <span>Group cộng đồng facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--tiktok" aria-hidden="true">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </span>
+                                <span>hocvienngoaigiao.dav</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--ig" aria-hidden="true">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                                <span>hocvienngoaigiao.dav</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="site-footer__copyright">Copyright © 2026 DAV Alumni. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./js/header-user-menu.js"></script>
+</body>
+</html>

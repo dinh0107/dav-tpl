@@ -1,0 +1,805 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển dụng | DAV Alumni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="page-recruitment">
+    <header>
+        <div class="header-top">
+            <div class="header-top__wrap">
+                <div class="header-top__left">
+                    <span class="header-top__hat"><img src="./assets/hat.svg" alt=""></span>
+                    <span class="header-top__tagline">mạng lưới CỰU SINH VIÊN Học viện Ngoại giao</span>
+                </div>
+                <div class="header-top__right">
+                    <div class="header-top__user-wrap"><button type="button" class="header-top__user" id="header-user-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="header-user-menu" aria-label="Menu tài khoản"><img src="./assets/user.svg" alt="" width="24" height="24"><span class="header-top__user-name">Phúc Nguyễn</span><span class="header-top__user-chev" aria-hidden="true"><i class="fa-solid fa-angle-down"></i></span></button><div class="header-top__dropdown" id="header-user-menu" role="menu" aria-labelledby="header-user-trigger" hidden aria-hidden="true"><div class="header-top__dropdown-head"><p class="header-top__dropdown-name">Nguyễn Văn Phúc</p><p class="header-top__dropdown-email">Phucnguyen@gmail.com</p></div><div class="header-top__dropdown-body"><a href="#" class="header-top__dropdown-item" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-regular fa-user"></i></span><span class="header-top__dropdown-label">Hồ sơ cá nhân</span><span class="header-top__dropdown-chev" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span></a><a href="#" class="header-top__dropdown-item" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-solid fa-lock"></i></span><span class="header-top__dropdown-label">Đổi mật khẩu</span><span class="header-top__dropdown-chev" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span></a><div class="header-top__dropdown-divider" role="separator"></div><a href="#" class="header-top__dropdown-item header-top__dropdown-item--danger" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-solid fa-arrow-right-from-bracket"></i></span><span class="header-top__dropdown-label">Đăng xuất</span></a></div></div></div>
+                    <span class="header-top__divider" aria-hidden="true"></span>
+                    <button type="button" class="header-top__search" aria-label="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <span class="header-top__divider" aria-hidden="true"></span>
+                    <div class="header-top__lang"><img src="./assets/vn.svg" alt="" width="20" height="20"><span>VN</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="inner-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3"><a href="/"><img src="./assets/logo.png" alt="DAV" class="logo"></a></div>
+                    <div class="col-lg-9 d-flex align-items-center justify-content-around flex-wrap gap-3"><a
+                            href="mailto:alumni@dav.edu.vn" class="info-item">
+                            <div class="info-item_icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-item_content"><span class="info-item_title">Email:</span><span
+                                    class="info-item_desc">alumni@dav.edu.vn</span></div>
+                        </a><a href="tel:02438344540" class="info-item">
+                            <div class="info-item_icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="info-item_content"><span class="info-item_title">Điện Thoại:</span><span
+                                    class="info-item_desc">024.38344540</span></div>
+                        </a>
+                        <div class="info-item">
+                            <div class="info-item_icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-item_content"><span class="info-item_title">Địa Chỉ:</span><span
+                                    class="info-item_desc">Số 69 Chùa Láng, Láng Thượng, Đống Đa, TP Hà Nội.</span>
+                            </div>
+                        </div><a href="" class="login-icon"><i class="fa-solid fa-key"></i><span class="text-white">Đăng
+                                nhập</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-header">
+            <div class="container px-4">
+                <ul class="ul-reset">
+                    <li class="menu-header__has-sub"><a href="">Giới thiệu <i class="fa-regular fa-angle-down"></i></a><ul class="menu-header__sub"><li><a href="./su-mang-tam-nhin.html">Sứ mạng &amp; tầm nhìn</a></li><li><a href="./ban-dieu-hanh.html">Ban điều hành</a></li></ul></li>
+                    <li><a href="">Theo dòng ký ức</a></li>
+                    <li><a href="">Tin tức - Sự kiện <i class="fa-regular fa-angle-down"></i></a></li>
+                    <li><a href="">Mạng lưới Alumni</a></li>
+                    <li><a href="">Vì thế hệ tương lai</a></li>
+                    <li><a href="">Cơ hội việc làm</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="recruitment-hero" aria-labelledby="recruitment-hero-title">
+            <div class="recruitment-hero__media" aria-hidden="true">
+                <img src="./assets/tuyen-dung-bg.jpg" alt="" class="recruitment-hero__img recruitment-hero__img--back">
+                <div class="recruitment-hero__shade"></div>
+            </div>
+            <div class="recruitment-hero__gradient" aria-hidden="true"></div>
+            <div class="recruitment-hero__inner">
+                <h1 id="recruitment-hero-title" class="recruitment-hero__title">cổng thông tin tuyển dụng</h1>
+                <form class="recruitment-hero__search" action="#" method="get" role="search">
+                    <div class="recruitment-hero__field recruitment-hero__field--grow">
+                        <span class="recruitment-hero__field-icon recruitment-hero__field-icon--blue"
+                            aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="search" name="q" class="recruitment-hero__input"
+                            placeholder="Tìn theo chức danh, vị trí, kỹ năng...">
+                    </div>
+                    <div class="recruitment-hero__field recruitment-hero__field--260 recruitment-hero__field--select">
+                        <select name="city" class="recruitment-hero__select" aria-label="Tỉnh thành">
+                            <option value="">Tỉnh thành</option>
+                            <option value="hn">Hà Nội</option>
+                        </select>
+                        <span class="recruitment-hero__select-face" aria-hidden="true">
+                            <span class="recruitment-hero__select-label">Tỉnh thành</span>
+                            <span class="recruitment-hero__chev"><i class="fa-solid fa-angle-down"></i></span>
+                        </span>
+                    </div>
+                    <div class="recruitment-hero__field recruitment-hero__field--260 recruitment-hero__field--select">
+                        <select name="field" class="recruitment-hero__select" aria-label="Ngành nghề">
+                            <option value="">Tất cả ngành nghề</option>
+                            <option value="it">Công nghệ thông tin</option>
+                        </select>
+                        <span class="recruitment-hero__select-face" aria-hidden="true">
+                            <span class="recruitment-hero__select-label">Tất cả ngành nghề</span>
+                            <span class="recruitment-hero__chev"><i class="fa-solid fa-angle-down"></i></span>
+                        </span>
+                    </div>
+                    <button type="submit" class="recruitment-hero__submit">
+                        <span class="recruitment-hero__submit-icon" aria-hidden="true"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                        <span>Tìm kiếm</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <nav class="recruitment-breadcrumb" aria-label="Breadcrumb">
+            <div class="recruitment-breadcrumb__inner">
+                <a href="/">Trang chủ</a>
+                <span class="recruitment-breadcrumb__sep" aria-hidden="true"><i
+                        class="fa-solid fa-angle-right"></i></span>
+                <a href="#">Cơ hội việc làm</a>
+                <span class="recruitment-breadcrumb__sep" aria-hidden="true"><i
+                        class="fa-solid fa-angle-right"></i></span>
+                <span class="recruitment-breadcrumb__current" aria-current="page">Tin tuyển dụng</span>
+            </div>
+        </nav>
+
+        <div class="recruitment-board">
+            <div class="recruitment-board__inner">
+                <div class="recruitment-board__tabs" role="tablist">
+                    <button type="button" class="recruitment-board__tab recruitment-board__tab--active" role="tab"
+                        aria-selected="true">tin tuyển dụng</button>
+                    <button type="button" class="recruitment-board__tab" role="tab" aria-selected="false">Cơ hội thực
+                        tập</button>
+                </div>
+
+                <div class="recruitment-board__layout">
+                    <aside class="recruitment-filter" aria-label="Bộ lọc">
+                        <div class="recruitment-filter__head">
+                            <span class="recruitment-filter__head-icon" aria-hidden="true"><i
+                                    class="fa-solid fa-sliders"></i></span>
+                            <span class="recruitment-filter__head-text">Bộ lọc:</span>
+                        </div>
+
+                        <details class="recruitment-filter__block" open>
+                            <summary class="recruitment-filter__summary">
+                                <span class="recruitment-filter__summary-title">Ngày đăng</span>
+                                <span class="recruitment-filter__summary-icon" aria-hidden="true"><i
+                                        class="fa-solid fa-angle-up"></i></span>
+                            </summary>
+                            <div class="recruitment-filter__options recruitment-filter__options--radio">
+                                <label class="recruitment-radio"><input type="radio" name="posted" value="latest"
+                                        checked><span class="recruitment-radio__ui"></span><span>Mới nhất</span></label>
+                                <label class="recruitment-radio"><input type="radio" name="posted" value="d1"><span
+                                        class="recruitment-radio__ui"></span><span>1 ngày trước</span></label>
+                                <label class="recruitment-radio"><input type="radio" name="posted" value="d7"><span
+                                        class="recruitment-radio__ui"></span><span>7 ngày trước</span></label>
+                                <label class="recruitment-radio"><input type="radio" name="posted" value="d14"><span
+                                        class="recruitment-radio__ui"></span><span>14 ngày trước</span></label>
+                                <label class="recruitment-radio"><input type="radio" name="posted" value="d30"><span
+                                        class="recruitment-radio__ui"></span><span>30 ngày trước</span></label>
+                                <label class="recruitment-radio"><input type="radio" name="posted" value="all"><span
+                                        class="recruitment-radio__ui"></span><span>Tất cả</span></label>
+                            </div>
+                        </details>
+
+                        <div class="recruitment-filter__divide" aria-hidden="true"></div>
+
+                        <details class="recruitment-filter__block" open>
+                            <summary class="recruitment-filter__summary">
+                                <span class="recruitment-filter__summary-title">Nhóm ngành</span>
+                                <span class="recruitment-filter__summary-icon" aria-hidden="true"><i
+                                        class="fa-solid fa-angle-up"></i></span>
+                            </summary>
+                            <div class="recruitment-filter__options">
+                                <label class="recruitment-check"><input type="checkbox" name="industry" value="cntt"
+                                        checked><span class="recruitment-check__ui"></span><span>Công nghệ thông
+                                        tin</span></label>
+                                <label class="recruitment-check"><input type="checkbox" name="industry"
+                                        value="truyen"><span class="recruitment-check__ui"></span><span>Truyền
+                                        hình/Truyền thông/Báo chí</span></label>
+                                <label class="recruitment-check"><input type="checkbox" name="industry"
+                                        value="internet"><span
+                                        class="recruitment-check__ui"></span><span>Internet/Online Media</span></label>
+                                <label class="recruitment-check"><input type="checkbox" name="industry" value="gd"><span
+                                        class="recruitment-check__ui"></span><span>Giáo dục/Đào tạo</span></label>
+                                <label class="recruitment-check"><input type="checkbox" name="industry"
+                                        value="dich"><span class="recruitment-check__ui"></span><span>Biên phiên
+                                        dịch</span></label>
+                            </div>
+                        </details>
+
+                        <div class="recruitment-filter__divide" aria-hidden="true"></div>
+
+                        <details class="recruitment-filter__block" open>
+                            <summary class="recruitment-filter__summary">
+                                <span class="recruitment-filter__summary-title">Kinh nghiệm</span>
+                                <span class="recruitment-filter__summary-icon" aria-hidden="true"><i
+                                        class="fa-solid fa-angle-up"></i></span>
+                            </summary>
+                            <div class="recruitment-filter__options">
+                                <label class="recruitment-check"><input type="checkbox" name="exp" value="new"
+                                        checked><span class="recruitment-check__ui"></span><span>Sinh viên mới ra
+                                        trường</span></label>
+                                <label class="recruitment-check"><input type="checkbox" name="exp" value="lt1"><span
+                                        class="recruitment-check__ui"></span><span>Dưới 1 năm</span></label>
+                                <label class="recruitment-check"><input type="checkbox" name="exp" value="1to2"><span
+                                        class="recruitment-check__ui"></span><span>Từ 1 tới &lt; 2 năm</span></label>
+                                <label class="recruitment-check"><input type="checkbox" name="exp" value="2to3"><span
+                                        class="recruitment-check__ui"></span><span>Từ 2 tới &lt; 3 năm</span></label>
+                                <label class="recruitment-check"><input type="checkbox" name="exp" value="3to5"><span
+                                        class="recruitment-check__ui"></span><span>Từ 3 tới &lt; 5 năm</span></label>
+                                <label class="recruitment-check"><input type="checkbox" name="exp" value="gt5"><span
+                                        class="recruitment-check__ui"></span><span>Trên 5 năm</span></label>
+                            </div>
+                        </details>
+                    </aside>
+
+                    <div class="recruitment-feed">
+                        <p class="recruitment-feed__count">Có sẵn 60 công việc</p>
+                        <ul class="recruitment-feed__list">
+                            <li class="recruitment-feed__item">
+                                <article class="recruitment-card">
+                                    <div class="recruitment-card__main">
+                                        <div class="recruitment-card__brand">
+                                            <div class="recruitment-card__logo-frame">
+                                                <div class="recruitment-card__logo-box">
+                                                    <img src="./assets/Rectangle 3464228 (1).jpg"
+                                                        alt="Logo Công ty Cổ phần MISA"
+                                                        class="recruitment-card__logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="recruitment-card__status"><span>Đang tuyển</span></div>
+                                        </div>
+                                        <div class="recruitment-card__body">
+                                            <div class="recruitment-card__titles">
+                                                <p class="recruitment-card__company">Công ty Cổ phần MISA</p>
+                                                <h3 class="recruitment-card__job"><a href="#">Chuyên viên Truyền thông
+                                                        Sáng tạo</a></h3>
+                                            </div>
+                                            <ul class="recruitment-card__meta">
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-money-bill-wave"></i></span><span
+                                                        class="recruitment-card__salary"><span
+                                                            class="recruitment-card__salary-label">Mức lương:
+                                                        </span><span class="recruitment-card__salary-value">15.000.000 -
+                                                            25.000.000đ/tháng</span></span></li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-location-dot"></i></span>Địa chỉ làm
+                                                    việc: Hà Nội, Việt Nam</li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-regular fa-calendar"></i></span><span>Hạn ứng
+                                                        tuyển: <strong>29/04/2026</strong></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="recruitment-card__type"><span class="recruitment-card__type-icon"
+                                                aria-hidden="true"><i
+                                                    class="fa-solid fa-briefcase"></i></span><span>Full-time</span>
+                                        </div>
+                                    </div>
+                                    <div class="recruitment-card__rule" aria-hidden="true"></div>
+                                    <div class="recruitment-card__footer">
+                                        <div class="recruitment-card__posted"><span
+                                                class="recruitment-card__posted-icon" aria-hidden="true"><i
+                                                    class="fa-regular fa-calendar"></i></span>Ngày đăng: 05/04/2036
+                                        </div>
+                                        <a href="#" class="recruitment-card__cta">Xem chi tiết</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recruitment-feed__item">
+                                <article class="recruitment-card">
+                                    <div class="recruitment-card__main">
+                                        <div class="recruitment-card__brand">
+                                            <div class="recruitment-card__logo-frame">
+                                                <div class="recruitment-card__logo-box">
+                                                    <img src="./assets/Rectangle 3464228 (1).jpg"
+                                                        alt="Logo Công ty Cổ phần MISA"
+                                                        class="recruitment-card__logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="recruitment-card__status"><span>Đang tuyển</span></div>
+                                        </div>
+                                        <div class="recruitment-card__body">
+                                            <div class="recruitment-card__titles">
+                                                <p class="recruitment-card__company">Công ty Cổ phần MISA</p>
+                                                <h3 class="recruitment-card__job"><a href="#">Chuyên viên Truyền thông
+                                                        Sáng tạo</a></h3>
+                                            </div>
+                                            <ul class="recruitment-card__meta">
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-money-bill-wave"></i></span><span
+                                                        class="recruitment-card__salary"><span
+                                                            class="recruitment-card__salary-label">Mức lương:
+                                                        </span><span class="recruitment-card__salary-value">15.000.000 -
+                                                            25.000.000đ/tháng</span></span></li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-location-dot"></i></span>Địa chỉ làm
+                                                    việc: Hà Nội, Việt Nam</li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-regular fa-calendar"></i></span><span>Hạn ứng
+                                                        tuyển: <strong>29/04/2026</strong></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="recruitment-card__type"><span class="recruitment-card__type-icon"
+                                                aria-hidden="true"><i
+                                                    class="fa-solid fa-briefcase"></i></span><span>Full-time</span>
+                                        </div>
+                                    </div>
+                                    <div class="recruitment-card__rule" aria-hidden="true"></div>
+                                    <div class="recruitment-card__footer">
+                                        <div class="recruitment-card__posted"><span
+                                                class="recruitment-card__posted-icon" aria-hidden="true"><i
+                                                    class="fa-regular fa-calendar"></i></span>Ngày đăng: 05/04/2036
+                                        </div>
+                                        <a href="#" class="recruitment-card__cta">Xem chi tiết</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recruitment-feed__item">
+                                <article class="recruitment-card">
+                                    <div class="recruitment-card__main">
+                                        <div class="recruitment-card__brand">
+                                            <div class="recruitment-card__logo-frame">
+                                                <div class="recruitment-card__logo-box">
+                                                    <img src="./assets/Rectangle 3464228 (1).jpg"
+                                                        alt="Logo Công ty Cổ phần MISA"
+                                                        class="recruitment-card__logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="recruitment-card__status"><span>Đang tuyển</span></div>
+                                        </div>
+                                        <div class="recruitment-card__body">
+                                            <div class="recruitment-card__titles">
+                                                <p class="recruitment-card__company">Công ty Cổ phần MISA</p>
+                                                <h3 class="recruitment-card__job"><a href="#">Chuyên viên Truyền thông
+                                                        Sáng tạo</a></h3>
+                                            </div>
+                                            <ul class="recruitment-card__meta">
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-money-bill-wave"></i></span><span
+                                                        class="recruitment-card__salary"><span
+                                                            class="recruitment-card__salary-label">Mức lương:
+                                                        </span><span class="recruitment-card__salary-value">15.000.000 -
+                                                            25.000.000đ/tháng</span></span></li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-location-dot"></i></span>Địa chỉ làm
+                                                    việc: Hà Nội, Việt Nam</li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-regular fa-calendar"></i></span><span>Hạn ứng
+                                                        tuyển: <strong>29/04/2026</strong></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="recruitment-card__type"><span class="recruitment-card__type-icon"
+                                                aria-hidden="true"><i
+                                                    class="fa-solid fa-briefcase"></i></span><span>Full-time</span>
+                                        </div>
+                                    </div>
+                                    <div class="recruitment-card__rule" aria-hidden="true"></div>
+                                    <div class="recruitment-card__footer">
+                                        <div class="recruitment-card__posted"><span
+                                                class="recruitment-card__posted-icon" aria-hidden="true"><i
+                                                    class="fa-regular fa-calendar"></i></span>Ngày đăng: 05/04/2036
+                                        </div>
+                                        <a href="#" class="recruitment-card__cta">Xem chi tiết</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recruitment-feed__item">
+                                <article class="recruitment-card">
+                                    <div class="recruitment-card__main">
+                                        <div class="recruitment-card__brand">
+                                            <div class="recruitment-card__logo-frame">
+                                                <div class="recruitment-card__logo-box">
+                                                    <img src="./assets/Rectangle 3464228 (1).jpg"
+                                                        alt="Logo Công ty Cổ phần MISA"
+                                                        class="recruitment-card__logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="recruitment-card__status"><span>Đang tuyển</span></div>
+                                        </div>
+                                        <div class="recruitment-card__body">
+                                            <div class="recruitment-card__titles">
+                                                <p class="recruitment-card__company">Công ty Cổ phần MISA</p>
+                                                <h3 class="recruitment-card__job"><a href="#">Chuyên viên Truyền thông
+                                                        Sáng tạo</a></h3>
+                                            </div>
+                                            <ul class="recruitment-card__meta">
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-money-bill-wave"></i></span><span
+                                                        class="recruitment-card__salary"><span
+                                                            class="recruitment-card__salary-label">Mức lương:
+                                                        </span><span class="recruitment-card__salary-value">15.000.000 -
+                                                            25.000.000đ/tháng</span></span></li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-location-dot"></i></span>Địa chỉ làm
+                                                    việc: Hà Nội, Việt Nam</li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-regular fa-calendar"></i></span><span>Hạn ứng
+                                                        tuyển: <strong>29/04/2026</strong></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="recruitment-card__type"><span class="recruitment-card__type-icon"
+                                                aria-hidden="true"><i
+                                                    class="fa-solid fa-briefcase"></i></span><span>Full-time</span>
+                                        </div>
+                                    </div>
+                                    <div class="recruitment-card__rule" aria-hidden="true"></div>
+                                    <div class="recruitment-card__footer">
+                                        <div class="recruitment-card__posted"><span
+                                                class="recruitment-card__posted-icon" aria-hidden="true"><i
+                                                    class="fa-regular fa-calendar"></i></span>Ngày đăng: 05/04/2036
+                                        </div>
+                                        <a href="#" class="recruitment-card__cta">Xem chi tiết</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recruitment-feed__item">
+                                <article class="recruitment-card">
+                                    <div class="recruitment-card__main">
+                                        <div class="recruitment-card__brand">
+                                            <div class="recruitment-card__logo-frame">
+                                                <div class="recruitment-card__logo-box">
+                                                    <img src="./assets/Rectangle 3464228 (1).jpg"
+                                                        alt="Logo Công ty Cổ phần MISA"
+                                                        class="recruitment-card__logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="recruitment-card__status"><span>Đang tuyển</span></div>
+                                        </div>
+                                        <div class="recruitment-card__body">
+                                            <div class="recruitment-card__titles">
+                                                <p class="recruitment-card__company">Công ty Cổ phần MISA</p>
+                                                <h3 class="recruitment-card__job"><a href="#">Chuyên viên Truyền thông
+                                                        Sáng tạo</a></h3>
+                                            </div>
+                                            <ul class="recruitment-card__meta">
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-money-bill-wave"></i></span><span
+                                                        class="recruitment-card__salary"><span
+                                                            class="recruitment-card__salary-label">Mức lương:
+                                                        </span><span class="recruitment-card__salary-value">15.000.000 -
+                                                            25.000.000đ/tháng</span></span></li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-location-dot"></i></span>Địa chỉ làm
+                                                    việc: Hà Nội, Việt Nam</li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-regular fa-calendar"></i></span><span>Hạn ứng
+                                                        tuyển: <strong>29/04/2026</strong></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="recruitment-card__type"><span class="recruitment-card__type-icon"
+                                                aria-hidden="true"><i
+                                                    class="fa-solid fa-briefcase"></i></span><span>Full-time</span>
+                                        </div>
+                                    </div>
+                                    <div class="recruitment-card__rule" aria-hidden="true"></div>
+                                    <div class="recruitment-card__footer">
+                                        <div class="recruitment-card__posted"><span
+                                                class="recruitment-card__posted-icon" aria-hidden="true"><i
+                                                    class="fa-regular fa-calendar"></i></span>Ngày đăng: 05/04/2036
+                                        </div>
+                                        <a href="#" class="recruitment-card__cta">Xem chi tiết</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recruitment-feed__item">
+                                <article class="recruitment-card">
+                                    <div class="recruitment-card__main">
+                                        <div class="recruitment-card__brand">
+                                            <div class="recruitment-card__logo-frame">
+                                                <div class="recruitment-card__logo-box">
+                                                    <img src="./assets/Rectangle 3464228 (1).jpg"
+                                                        alt="Logo Công ty Cổ phần MISA"
+                                                        class="recruitment-card__logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="recruitment-card__status"><span>Đang tuyển</span></div>
+                                        </div>
+                                        <div class="recruitment-card__body">
+                                            <div class="recruitment-card__titles">
+                                                <p class="recruitment-card__company">Công ty Cổ phần MISA</p>
+                                                <h3 class="recruitment-card__job"><a href="#">Chuyên viên Truyền thông
+                                                        Sáng tạo</a></h3>
+                                            </div>
+                                            <ul class="recruitment-card__meta">
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-money-bill-wave"></i></span><span
+                                                        class="recruitment-card__salary"><span
+                                                            class="recruitment-card__salary-label">Mức lương:
+                                                        </span><span class="recruitment-card__salary-value">15.000.000 -
+                                                            25.000.000đ/tháng</span></span></li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-location-dot"></i></span>Địa chỉ làm
+                                                    việc: Hà Nội, Việt Nam</li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-regular fa-calendar"></i></span><span>Hạn ứng
+                                                        tuyển: <strong>29/04/2026</strong></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="recruitment-card__type"><span class="recruitment-card__type-icon"
+                                                aria-hidden="true"><i
+                                                    class="fa-solid fa-briefcase"></i></span><span>Full-time</span>
+                                        </div>
+                                    </div>
+                                    <div class="recruitment-card__rule" aria-hidden="true"></div>
+                                    <div class="recruitment-card__footer">
+                                        <div class="recruitment-card__posted"><span
+                                                class="recruitment-card__posted-icon" aria-hidden="true"><i
+                                                    class="fa-regular fa-calendar"></i></span>Ngày đăng: 05/04/2036
+                                        </div>
+                                        <a href="#" class="recruitment-card__cta">Xem chi tiết</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recruitment-feed__item">
+                                <article class="recruitment-card">
+                                    <div class="recruitment-card__main">
+                                        <div class="recruitment-card__brand">
+                                            <div class="recruitment-card__logo-frame">
+                                                <div class="recruitment-card__logo-box">
+                                                    <img src="./assets/Rectangle 3464228 (1).jpg"
+                                                        alt="Logo Công ty Cổ phần MISA"
+                                                        class="recruitment-card__logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="recruitment-card__status"><span>Đang tuyển</span></div>
+                                        </div>
+                                        <div class="recruitment-card__body">
+                                            <div class="recruitment-card__titles">
+                                                <p class="recruitment-card__company">Công ty Cổ phần MISA</p>
+                                                <h3 class="recruitment-card__job"><a href="#">Chuyên viên Truyền thông
+                                                        Sáng tạo</a></h3>
+                                            </div>
+                                            <ul class="recruitment-card__meta">
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-money-bill-wave"></i></span><span
+                                                        class="recruitment-card__salary"><span
+                                                            class="recruitment-card__salary-label">Mức lương:
+                                                        </span><span class="recruitment-card__salary-value">15.000.000 -
+                                                            25.000.000đ/tháng</span></span></li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-location-dot"></i></span>Địa chỉ làm
+                                                    việc: Hà Nội, Việt Nam</li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-regular fa-calendar"></i></span><span>Hạn ứng
+                                                        tuyển: <strong>29/04/2026</strong></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="recruitment-card__type"><span class="recruitment-card__type-icon"
+                                                aria-hidden="true"><i
+                                                    class="fa-solid fa-briefcase"></i></span><span>Full-time</span>
+                                        </div>
+                                    </div>
+                                    <div class="recruitment-card__rule" aria-hidden="true"></div>
+                                    <div class="recruitment-card__footer">
+                                        <div class="recruitment-card__posted"><span
+                                                class="recruitment-card__posted-icon" aria-hidden="true"><i
+                                                    class="fa-regular fa-calendar"></i></span>Ngày đăng: 05/04/2036
+                                        </div>
+                                        <a href="#" class="recruitment-card__cta">Xem chi tiết</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recruitment-feed__item">
+                                <article class="recruitment-card">
+                                    <div class="recruitment-card__main">
+                                        <div class="recruitment-card__brand">
+                                            <div class="recruitment-card__logo-frame">
+                                                <div class="recruitment-card__logo-box">
+                                                    <img src="./assets/Rectangle 3464228 (1).jpg"
+                                                        alt="Logo Công ty Cổ phần MISA"
+                                                        class="recruitment-card__logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="recruitment-card__status"><span>Đang tuyển</span></div>
+                                        </div>
+                                        <div class="recruitment-card__body">
+                                            <div class="recruitment-card__titles">
+                                                <p class="recruitment-card__company">Công ty Cổ phần MISA</p>
+                                                <h3 class="recruitment-card__job"><a href="#">Chuyên viên Truyền thông
+                                                        Sáng tạo</a></h3>
+                                            </div>
+                                            <ul class="recruitment-card__meta">
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-money-bill-wave"></i></span><span
+                                                        class="recruitment-card__salary"><span
+                                                            class="recruitment-card__salary-label">Mức lương:
+                                                        </span><span class="recruitment-card__salary-value">15.000.000 -
+                                                            25.000.000đ/tháng</span></span></li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-location-dot"></i></span>Địa chỉ làm
+                                                    việc: Hà Nội, Việt Nam</li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-regular fa-calendar"></i></span><span>Hạn ứng
+                                                        tuyển: <strong>29/04/2026</strong></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="recruitment-card__type"><span class="recruitment-card__type-icon"
+                                                aria-hidden="true"><i
+                                                    class="fa-solid fa-briefcase"></i></span><span>Full-time</span>
+                                        </div>
+                                    </div>
+                                    <div class="recruitment-card__rule" aria-hidden="true"></div>
+                                    <div class="recruitment-card__footer">
+                                        <div class="recruitment-card__posted"><span
+                                                class="recruitment-card__posted-icon" aria-hidden="true"><i
+                                                    class="fa-regular fa-calendar"></i></span>Ngày đăng: 05/04/2036
+                                        </div>
+                                        <a href="#" class="recruitment-card__cta">Xem chi tiết</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recruitment-feed__item">
+                                <article class="recruitment-card">
+                                    <div class="recruitment-card__main">
+                                        <div class="recruitment-card__brand">
+                                            <div class="recruitment-card__logo-frame">
+                                                <div class="recruitment-card__logo-box">
+                                                    <img src="./assets/Rectangle 3464228 (1).jpg"
+                                                        alt="Logo Công ty Cổ phần MISA"
+                                                        class="recruitment-card__logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="recruitment-card__status"><span>Đang tuyển</span></div>
+                                        </div>
+                                        <div class="recruitment-card__body">
+                                            <div class="recruitment-card__titles">
+                                                <p class="recruitment-card__company">Công ty Cổ phần MISA</p>
+                                                <h3 class="recruitment-card__job"><a href="#">Chuyên viên Truyền thông
+                                                        Sáng tạo</a></h3>
+                                            </div>
+                                            <ul class="recruitment-card__meta">
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-money-bill-wave"></i></span><span
+                                                        class="recruitment-card__salary"><span
+                                                            class="recruitment-card__salary-label">Mức lương:
+                                                        </span><span class="recruitment-card__salary-value">15.000.000 -
+                                                            25.000.000đ/tháng</span></span></li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-solid fa-location-dot"></i></span>Địa chỉ làm
+                                                    việc: Hà Nội, Việt Nam</li>
+                                                <li><span class="recruitment-card__meta-icon" aria-hidden="true"><i
+                                                            class="fa-regular fa-calendar"></i></span><span>Hạn ứng
+                                                        tuyển: <strong>29/04/2026</strong></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="recruitment-card__type"><span class="recruitment-card__type-icon"
+                                                aria-hidden="true"><i
+                                                    class="fa-solid fa-briefcase"></i></span><span>Full-time</span>
+                                        </div>
+                                    </div>
+                                    <div class="recruitment-card__rule" aria-hidden="true"></div>
+                                    <div class="recruitment-card__footer">
+                                        <div class="recruitment-card__posted"><span
+                                                class="recruitment-card__posted-icon" aria-hidden="true"><i
+                                                    class="fa-regular fa-calendar"></i></span>Ngày đăng: 05/04/2036
+                                        </div>
+                                        <a href="#" class="recruitment-card__cta">Xem chi tiết</a>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <nav class="dav-pagination" aria-label="Phân trang">
+                            <button type="button" class="dav-pagination__nav dav-pagination__nav--prev"
+                                aria-label="Trang trước"><i class="fa-solid fa-angle-left"></i></button>
+                            <button type="button" class="dav-pagination__page is-active"
+                                aria-current="page">1</button>
+                            <button type="button" class="dav-pagination__page">2</button>
+                            <button type="button" class="dav-pagination__page">3</button>
+                            <span class="dav-pagination__ellipsis" aria-hidden="true">…</span>
+                            <button type="button" class="dav-pagination__page">8</button>
+                            <button type="button" class="dav-pagination__page">9</button>
+                            <button type="button" class="dav-pagination__page">10</button>
+                            <button type="button" class="dav-pagination__nav dav-pagination__nav--next"
+                                aria-label="Trang sau"><i class="fa-solid fa-angle-right"></i></button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="job-detail__footer">
+            <div class="job-detail__footer-bg" aria-hidden="true">
+                <div class="job-detail__footer-photo-mask"><img
+                        src="https://www.figma.com/api/mcp/asset/87dc90f4-1093-4f44-be81-fae32ce727db" alt=""></div>
+            </div>
+            <div class="job-detail__footer-inner">
+                <div class="job-detail__footer-grid">
+                    <div class="job-detail__footer-col">
+                        <div class="job-detail__footer-brand">
+                            <p>mạng lưới Cựu sinh viên</p>
+                            <p>HỌC VIỆN NGOẠI GIAO</p>
+                            <p>(DAV ALUMNI NETWORK)</p>
+                        </div>
+                        <div class="job-detail__footer-line">
+                            <span class="job-detail__footer-line-icon" aria-hidden="true"><img
+                                    src="https://www.figma.com/api/mcp/asset/35ef1564-4183-4207-b58d-93969b970840"
+                                    width="24" height="24" alt=""><img
+                                    src="https://www.figma.com/api/mcp/asset/4c3c67d6-6d5a-4e77-85e1-c9bff7395aa0"
+                                    width="24" height="24" alt=""></span>
+                            <div>
+                                <p class="job-detail__footer-strong">Địa chỉ:</p>
+                                <p class="job-detail__footer-muted">Số 69 Chùa Láng, phường Láng Thượng, quận Đống Đa,
+                                    thành phố Hà Nội.</p>
+                            </div>
+                        </div>
+                        <div class="job-detail__footer-split">
+                            <div class="job-detail__footer-line">
+                                <span class="job-detail__footer-line-icon" aria-hidden="true"><img
+                                        src="https://www.figma.com/api/mcp/asset/1c20a98f-9df1-43a7-a1e3-b436314ae473"
+                                        width="24" height="24" alt=""></span>
+                                <div>
+                                    <p class="job-detail__footer-strong">Email:</p>
+                                    <p class="job-detail__footer-muted">alumni@dav.edu.vn</p>
+                                </div>
+                            </div>
+                            <div class="job-detail__footer-line">
+                                <span class="job-detail__footer-line-icon" aria-hidden="true"><img
+                                        src="https://www.figma.com/api/mcp/asset/bcee3327-1d26-4ccb-ac11-71ccb6675344"
+                                        width="24" height="24" alt=""></span>
+                                <div>
+                                    <p class="job-detail__footer-strong">Điện thoại:</p>
+                                    <p class="job-detail__footer-muted">024.38344540</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="job-detail__footer-rule">
+                        <div class="job-detail__footer-line">
+                            <span class="job-detail__footer-line-icon" aria-hidden="true"><img
+                                    src="https://www.figma.com/api/mcp/asset/1c20a98f-9df1-43a7-a1e3-b436314ae473"
+                                    width="24" height="24" alt=""></span>
+                            <div>
+                                <p class="job-detail__footer-strong">Ban liên lạc:</p>
+                                <p class="job-detail__footer-italic">Người phụ trách: Nguyễn Văn A - 0984 584 199</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-detail__footer-col job-detail__footer-col--links">
+                        <p class="job-detail__footer-heading">liên kết nhanh</p>
+                        <div class="job-detail__footer-links">
+                            <a href="#">Giới thiệu</a>
+                            <a href="#">Theo dòng ký ức</a>
+                            <a href="#">Tin tức - Sự kiện</a>
+                            <a href="#">mạng lưới Alumni</a>
+                            <a href="#">Vì thế hệ tương lai</a>
+                            <a href="#">Cơ hội việc làm</a>
+                            <a href="#">liên hệ</a>
+                            <a href="#">Quy chế hội viên</a>
+                        </div>
+                    </div>
+                    <div class="job-detail__footer-col job-detail__footer-col--news">
+                        <p class="job-detail__footer-heading">Đăng ký nhận tin</p>
+                        <form class="job-detail__news-form" action="#" method="post">
+                            <label class="job-detail__vh" for="job-detail-news-email">Email của bạn</label>
+                            <div class="job-detail__news-field">
+                                <input id="job-detail-news-email" name="news_email" type="email"
+                                    class="job-detail__news-input" placeholder="Email của bạn *">
+                                <button type="submit" class="job-detail__news-send"><span>Send</span><img
+                                        src="https://www.figma.com/api/mcp/asset/f57bb4d2-4c26-4603-87c3-f964fe970a05"
+                                        width="16" height="16" alt=""></button>
+                            </div>
+                        </form>
+                        <div class="job-detail__social">
+                            <p class="job-detail__footer-heading">Kết nối với chúng tôi</p>
+                            <div class="job-detail__social-list">
+                                <a href="#" class="job-detail__social-row"><span class="job-detail__social-ico"
+                                        aria-hidden="true"><img
+                                            src="https://www.figma.com/api/mcp/asset/61b87ab6-5105-4dbd-9efb-aedbe414f53b"
+                                            width="36" height="36" alt=""></span><span>Fanpage</span></a>
+                                <a href="#" class="job-detail__social-row"><span
+                                        class="job-detail__social-ico job-detail__social-ico--fb"
+                                        aria-hidden="true"><img
+                                            src="https://www.figma.com/api/mcp/asset/96e08904-14f7-47fe-ae6a-4df760f2caab"
+                                            width="36" height="36" alt=""><img
+                                            src="https://www.figma.com/api/mcp/asset/36f47e43-a69d-4116-a3f3-f52ec00a811c"
+                                            width="36" height="36" alt=""></span><span>Group cộng đồng
+                                        facebook</span></a>
+                                <a href="#" class="job-detail__social-row"><span class="job-detail__social-ico"
+                                        aria-hidden="true"><img
+                                            src="https://www.figma.com/api/mcp/asset/cd9509ea-34fb-4107-879b-ab51febc948e"
+                                            width="36" height="36" alt=""></span><span>hocvienngoaigiao.dav</span></a>
+                                <a href="#" class="job-detail__social-row"><span class="job-detail__social-ico"
+                                        aria-hidden="true"><img
+                                            src="https://www.figma.com/api/mcp/asset/184aedc5-20f1-4eeb-b5a7-da79280ce595"
+                                            width="36" height="36" alt=""></span><span>hocvienngoaigiao.dav</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="job-detail__copyright">Copyright © 2026 DAV Alumni. All rights reserved.</p>
+            </div>
+        </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/recruitment-page.js"></script>
+    <script src="./js/header-user-menu.js"></script>
+</body>
+
+</html>

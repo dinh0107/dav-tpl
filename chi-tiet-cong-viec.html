@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết công việc | DAV Alumni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..800;1,14..32,400..800&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="page-job-detail">
+    <header>
+        <div class="header-top">
+            <div class="header-top__wrap">
+                <div class="header-top__left">
+                    <span class="header-top__hat"><img src="./assets/hat.svg" alt=""></span>
+                    <span class="header-top__tagline">mạng lưới CỰU SINH VIÊN Học viện Ngoại giao</span>
+                </div>
+                <div class="header-top__right">
+                    <div class="header-top__user-wrap">
+                        <button type="button" class="header-top__user" id="header-user-trigger" aria-expanded="false"
+                            aria-haspopup="menu" aria-controls="header-user-menu" aria-label="Menu tài khoản"><img
+                                src="./assets/user.svg" alt="" width="24" height="24"><span
+                                class="header-top__user-name">Phúc Nguyễn</span><span class="header-top__user-chev"
+                                aria-hidden="true"><i class="fa-solid fa-angle-down"></i></span></button>
+                        <div class="header-top__dropdown" id="header-user-menu" role="menu"
+                            aria-labelledby="header-user-trigger" hidden aria-hidden="true">
+                            <div class="header-top__dropdown-head">
+                                <p class="header-top__dropdown-name">Nguyễn Văn Phúc</p>
+                                <p class="header-top__dropdown-email">Phucnguyen@gmail.com</p>
+                            </div>
+                            <div class="header-top__dropdown-body">
+                                <a href="#" class="header-top__dropdown-item" role="menuitem"><span
+                                        class="header-top__dropdown-icon" aria-hidden="true"><i
+                                            class="fa-regular fa-user"></i></span><span
+                                        class="header-top__dropdown-label">Hồ sơ cá nhân</span><span
+                                        class="header-top__dropdown-chev" aria-hidden="true"><i
+                                            class="fa-solid fa-chevron-right"></i></span></a>
+                                <a href="#" class="header-top__dropdown-item" role="menuitem"><span
+                                        class="header-top__dropdown-icon" aria-hidden="true"><i
+                                            class="fa-solid fa-lock"></i></span><span
+                                        class="header-top__dropdown-label">Đổi mật khẩu</span><span
+                                        class="header-top__dropdown-chev" aria-hidden="true"><i
+                                            class="fa-solid fa-chevron-right"></i></span></a>
+                                <div class="header-top__dropdown-divider" role="separator"></div>
+                                <a href="#" class="header-top__dropdown-item header-top__dropdown-item--danger"
+                                    role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i
+                                            class="fa-solid fa-arrow-right-from-bracket"></i></span><span
+                                        class="header-top__dropdown-label">Đăng xuất</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="header-top__divider" aria-hidden="true"></span>
+                    <button type="button" class="header-top__search" aria-label="Tìm kiếm"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <span class="header-top__divider" aria-hidden="true"></span>
+                    <div class="header-top__lang"><img src="./assets/vn.svg" alt="" width="20"
+                            height="20"><span>VN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3"><a href="./index.html"><img src="./assets/logo.png" alt="DAV"
+                                class="logo"></a>
+                    </div>
+                    <div class="col-lg-9 d-flex align-items-center justify-content-around flex-wrap gap-3"><a
+                            href="mailto:alumni@dav.edu.vn" class="info-item">
+                            <div class="info-item_icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-item_content"><span class="info-item_title">Email:</span><span
+                                    class="info-item_desc">alumni@dav.edu.vn</span></div>
+                        </a><a href="tel:02438344540" class="info-item">
+                            <div class="info-item_icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="info-item_content"><span class="info-item_title">Điện Thoại:</span><span
+                                    class="info-item_desc">024.38344540</span></div>
+                        </a>
+                        <div class="info-item">
+                            <div class="info-item_icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-item_content"><span class="info-item_title">Địa Chỉ:</span><span
+                                    class="info-item_desc">Số 69 Chùa Láng, Láng Thượng, Đống Đa, TP Hà Nội.</span>
+                            </div>
+                        </div><a href="" class="login-icon"><i class="fa-solid fa-key"></i><span class="text-white">Đăng
+                                nhập</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-header">
+            <div class="container px-4">
+                <ul class="ul-reset">
+                    <li class="menu-header__has-sub"><a href="">Giới thiệu <i class="fa-regular fa-angle-down"></i></a><ul class="menu-header__sub"><li><a href="./su-mang-tam-nhin.html">Sứ mạng &amp; tầm nhìn</a></li><li><a href="./ban-dieu-hanh.html">Ban điều hành</a></li></ul></li>
+                    <li><a href="">Theo dòng ký ức</a></li>
+                    <li><a href="">Tin tức - Sự kiện <i class="fa-regular fa-angle-down"></i></a></li>
+                    <li><a href="">Mạng lưới Alumni</a></li>
+                    <li><a href="">Vì thế hệ tương lai</a></li>
+                    <li class="is-active"><a href="./tuyen-dung.html">Cơ hội việc làm</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="job-detail">
+        <nav class="job-detail__breadcrumb" aria-label="Breadcrumb">
+            <ol class="job-detail__breadcrumb-list">
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li class="job-detail__breadcrumb-sep" aria-hidden="true"><img
+                        src="https://www.figma.com/api/mcp/asset/8dff117e-33f8-4639-8c46-e08fb5538868" width="12"
+                        height="12" alt=""></li>
+                <li><a href="./tuyen-dung.html">Cơ hội việc làm</a></li>
+                <li class="job-detail__breadcrumb-sep" aria-hidden="true"><img
+                        src="https://www.figma.com/api/mcp/asset/8dff117e-33f8-4639-8c46-e08fb5538868" width="12"
+                        height="12" alt=""></li>
+                <li aria-current="page">Cơ hội thực tập</li>
+            </ol>
+        </nav>
+
+        <main class="job-detail__main">
+            <div class="job-detail__main-shell">
+                <div class="job-detail__layout">
+                    <div class="job-detail__primary">
+                        <article class="job-detail__article">
+                            <header class="job-detail__title-block">
+                                <h1 class="job-detail__title">Chuyên viên tư vấn giải pháp (Pre-sale)</h1>
+                                <div class="job-detail__meta-top">
+                                    <div class="job-detail__pill">
+                                        <span>Đang tuyển</span>
+                                    </div>
+                                    <div class="job-detail__job-type">
+                                        <span class="job-detail__job-type-icon" aria-hidden="true"><img
+                                                src="https://www.figma.com/api/mcp/asset/fa5abd99-ae1c-4bd0-a3a1-1d558d10d621"
+                                                width="20" height="20" alt=""></span>
+                                        <span class="job-detail__job-type-text">Full-time</span>
+                                    </div>
+                                </div>
+                                <div class="job-detail__facts">
+                                    <div class="job-detail__facts-col job-detail__facts-col--grow">
+                                        <div class="job-detail__fact-row">
+                                            <span class="job-detail__fact-icon" aria-hidden="true"><img
+                                                    src="https://www.figma.com/api/mcp/asset/204f982a-784e-4050-87ae-3464970e2fa8"
+                                                    width="20" height="20" alt=""></span>
+                                            <p class="job-detail__fact-text"><span class="job-detail__fact-label">Mức
+                                                    lương:
+                                                </span><span class="job-detail__fact-strong">15.000.000 -
+                                                    25.000.000đ/tháng</span></p>
+                                        </div>
+                                        <div class="job-detail__fact-row job-detail__fact-row--pin">
+                                            <span class="job-detail__fact-icon" aria-hidden="true"><img
+                                                    src="https://www.figma.com/api/mcp/asset/4dd2517c-ad2f-4bbc-8dbe-4ec924952930"
+                                                    width="20" height="20" alt=""></span>
+                                            <p>Địa chỉ làm việc: Hà Nội, Việt Nam</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-detail__facts-col job-detail__facts-col--fixed">
+                                        <div class="job-detail__fact-row job-detail__fact-row--pin">
+                                            <span class="job-detail__fact-icon" aria-hidden="true"><img
+                                                    src="https://www.figma.com/api/mcp/asset/3adfa011-6a44-4aa9-99be-6e4e29d024cf"
+                                                    width="20" height="20" alt=""></span>
+                                            <p class="job-detail__fact-text"><span>Hạn ứng tuyển:
+                                                </span><strong>29/04/2026</strong></p>
+                                        </div>
+                                        <div class="job-detail__fact-row job-detail__fact-row--pin">
+                                            <span class="job-detail__fact-icon" aria-hidden="true"><img
+                                                    src="https://www.figma.com/api/mcp/asset/3adfa011-6a44-4aa9-99be-6e4e29d024cf"
+                                                    width="20" height="20" alt=""></span>
+                                            <p>Ngày đăng: 05/04/2036</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="job-detail__rule">
+                            </header>
+                            <div class="job-detail__cta-row">
+                                <button type="button" class="job-detail__btn-apply"
+                                    data-job-detail-apply-scroll><span>Nộp đơn ứng tuyển</span><img
+                                        src="https://www.figma.com/api/mcp/asset/f57bb4d2-4c26-4603-87c3-f964fe970a05"
+                                        width="16" height="16" alt=""></button>
+                            </div>
+                            <p class="job-detail__lead">Tập đoàn MISA, thành lập năm 1994, là đơn vị CNTT hàng đầu Việt
+                                Nam với hơn 350.000 khách hàng tổ chức và gần 3,5 triệu cá nhân, hiện diện tại 22 quốc
+                                gia. MISA tiên phong phát triển Agentic AI và nền tảng AIaaS, cung cấp giải pháp số hóa
+                                cho doanh nghiệp, hộ kinh doanh và chính phủ. Định vị là tập đoàn dẫn đầu về Agentic AI,
+                                MISA cam kết đổi mới sáng tạo, giúp tối ưu vận hành, nâng cao hiệu quả và giảm tải thủ
+                                công cho tổ chức. Sứ mệnh của MISA là đồng hành cùng chính phủ, doanh nghiệp và cá nhân
+                                trong hành trình chuyển đổi số, khẳng định vị thế công nghệ Việt Nam trên quốc tế.</p>
+                            <section class="job-detail__section">
+                                <h2 class="job-detail__section-title">Mô tả công việc</h2>
+                                <ul class="job-detail__list job-detail__list--bullet">
+                                    <li>Chủ động tiếp cận khách hàng đang sử dụng phần mềm AMIS Kế toán để tặng miễn phí
+                                        bộ giải pháp MISA AMIS Lite</li>
+                                    <li>Giới thiệu bộ giải pháp MISA AMIS Lite và các thông tin cần thiết khác để khách
+                                        hàng thấy sản phẩm phù hợp</li>
+                                    <li>Triển khai giúp khách hàng đưa bộ giải pháp MISA AMIS Lite vào sử dụng thành
+                                        công</li>
+                                    <li>Đối tượng khách hàng: Chủ doanh nghiệp, Giám đốc, Trưởng bộ phận tại Doanh
+                                        nghiệp quy mô Nhỏ đang sử dụng AMIS Kế toán</li>
+                                </ul>
+                            </section>
+                            <section class="job-detail__section">
+                                <h2 class="job-detail__section-title">Yêu cầu công việc</h2>
+                                <ul class="job-detail__list job-detail__list--bullet">
+                                    <li>Độ tuổi: 21 -26 tuổi</li>
+                                    <li>Tốt nghiệp Cao đẳng trở lên khối ngành về kinh tế hoặc được đào tạo các môn,
+                                        chứng chỉ liên quan đến nguyên lý kế toán.</li>
+                                    <li>Kỹ năng giao tiếp, thuyết phục tốt</li>
+                                    <li>Có khả năng học hỏi tốt, có mục tiêu rõ ràng, kiên trì theo đuổi mục tiêu</li>
+                                    <li>Không yêu cầu kinh nghiệm</li>
+                                </ul>
+                            </section>
+                            <section class="job-detail__section">
+                                <h2 class="job-detail__section-title">Quyền lợi</h2>
+                                <div class="job-detail__benefits">
+                                    <ol class="job-detail__list job-detail__list--numbered job-detail__list--benefit-head"
+                                        start="1">
+                                        <li>Thu nhập hấp dẫn:&nbsp;</li>
+                                    </ol>
+                                    <ul class="job-detail__list job-detail__list--bullet job-detail__list--nested">
+                                        <li>Thu nhập bình quân 15.000.000 - 20.000.000 VNĐ/ tháng bao gồm: Lương cứng
+                                            khởi điểm 8.000.000 VNĐ + thưởng doanh số + phụ cấp</li>
+                                    </ul>
+                                    <div class="job-detail__benefit-block">
+                                        <p class="job-detail__benefit-subtitle">2. Chính sách tăng lương và thưởng rõ
+                                            ràng </p>
+                                        <ul class="job-detail__list job-detail__list--bullet">
+                                            <li>Review lương cứng 4 lần/năm, điều chỉnh kịp thời theo kết quả công việc
+                                            </li>
+                                            <li>Thưởng nóng, thưởng chiến dịch, Nhân viên xuất sắc tháng, 6 tháng và
+                                                năm.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="job-detail__benefit-block">
+                                        <p class="job-detail__benefit-subtitle">3. Lộ trình nghề nghiệp rõ ràng:</p>
+                                        <ul class="job-detail__list job-detail__list--bullet">
+                                            <li>Chính sách Đào tạo theo từng giai đoạn phát triển với lộ trình rõ ràng,
+                                                hỗ trợ học tập và phát triển cá nhân toàn diện.</li>
+                                        </ul>
+                                        <ul class="job-detail__list job-detail__list--bullet">
+                                            <li>Thực chiến với khách hàng doanh nghiệp, được nâng cao kiến thức, kỹ
+                                                năng, trải nghiệm trên hành trình chinh phục và hỗ trợ khách hàng cải
+                                                tiến công tác quản lý thông qua giải pháp quản lý số</li>
+                                        </ul>
+                                        <ul class="job-detail__list job-detail__list--bullet">
+                                            <li>Chính sách ghi nhận rõ ràng, cơ hội thăng tiến lên quản lý hoặc chuyên
+                                                gia cho những người trẻ</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="job-detail__section">
+                                <h2 class="job-detail__section-title">Ai nên tham gia?</h2>
+                                <ul class="job-detail__list job-detail__list--bullet">
+                                    <li>Học sinh THPT đang định hướng ngành học</li>
+                                    <li>Phụ huynh muốn tìm hiểu môi trường đào tạo uy tín</li>
+                                    <li>Những bạn quan tâm đến lĩnh vực quan hệ quốc tế, truyền thông, kinh tế quốc tế,
+                                        luật quốc tế…</li>
+                                </ul>
+                            </section>
+                            <section class="job-detail__apply" id="job-detail-apply"
+                                aria-labelledby="job-detail-apply-heading">
+                                <header class="job-detail__apply-head">
+                                    <h2 id="job-detail-apply-heading" class="job-detail__apply-title">Nộp đơn ứng tuyển
+                                    </h2>
+                                    <p class="job-detail__apply-desc">Vui lòng để lại thông tin liên hệ của bạn, nhà
+                                        tuyển dụng sẽ liên hệ với bạn ngay lập tức!</p>
+                                </header>
+                                <form class="job-detail__form" action="#" method="post">
+                                    <div class="job-detail__field">
+                                        <label class="job-detail__label" for="job-detail-cv">Cv upload <span
+                                                class="job-detail__req">*</span></label>
+                                        <div class="job-detail__upload" data-job-detail-upload>
+                                            <p class="job-detail__upload-hint">Click để tải lên CV/Sơ yếu lí lịch của
+                                                bạn</p>
+                                            <div class="job-detail__upload-icon-wrap" aria-hidden="true"><img
+                                                    src="https://www.figma.com/api/mcp/asset/4a674b20-07d7-46b7-8510-ca4a75db6f02"
+                                                    width="20" height="20" alt=""></div>
+                                            <button type="button" class="job-detail__upload-btn"
+                                                data-job-detail-choose-file>Chọn tệp</button>
+                                            <input class="job-detail__upload-input" type="file" id="job-detail-cv"
+                                                name="cv"
+                                                accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                            <p class="job-detail__upload-note">Lưu ý: Sử dụng định dạng tệp tin (PDF,
+                                                doc, docx. Dung lượng tối đa 3MB)</p>
+                                        </div>
+                                    </div>
+                                    <div class="job-detail__field">
+                                        <label class="job-detail__label" for="job-detail-name">Họ và tên <span
+                                                class="job-detail__req">*</span></label>
+                                        <div class="job-detail__input-shell job-detail__input-shell--focus">
+                                            <div class="job-detail__input-wrap">
+                                                <input class="job-detail__input" type="text" id="job-detail-name"
+                                                    name="name" value="Nguyễn Văn A" autocomplete="name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-detail__field-row">
+                                        <div class="job-detail__field job-detail__field--half">
+                                            <label class="job-detail__label" for="job-detail-email">Email <span
+                                                    class="job-detail__req">*</span></label>
+                                            <input class="job-detail__input job-detail__input--plain" type="email"
+                                                id="job-detail-email" name="email" placeholder="Địa chỉ email"
+                                                autocomplete="email">
+                                        </div>
+                                        <div class="job-detail__field job-detail__field--half">
+                                            <label class="job-detail__label" for="job-detail-phone">Số điện thoại <span
+                                                    class="job-detail__req">*</span></label>
+                                            <input class="job-detail__input job-detail__input--plain" type="tel"
+                                                id="job-detail-phone" name="phone" placeholder="Số điện thoại của bạn"
+                                                autocomplete="tel">
+                                        </div>
+                                    </div>
+                                    <div class="job-detail__field">
+                                        <label class="job-detail__label" for="job-detail-letter">Thư xin việc</label>
+                                        <textarea class="job-detail__textarea" id="job-detail-letter" name="letter"
+                                            rows="4" placeholder="Nhập nội dung..."></textarea>
+                                    </div>
+                                    <button type="submit" class="job-detail__submit">Gửi hồ sơ ứng tuyển</button>
+                                </form>
+                            </section>
+                        </article>
+                        <section class="job-detail__related" aria-labelledby="job-detail-related-heading">
+                            <div class="job-detail__related-head">
+                                <h2 id="job-detail-related-heading" class="job-detail__related-title">Công việc khác
+                                </h2>
+                            </div>
+                            <article class="job-detail-card">
+                                <div class="job-detail-card__row">
+                                    <div class="job-detail-card__brand">
+                                        <div class="job-detail-card__logo-frame">
+                                            <div class="job-detail-card__logo"><img
+                                                    src="https://www.figma.com/api/mcp/asset/cd4954c2-c866-4792-8a1c-4c4254e052a3"
+                                                    alt="MISA"></div>
+                                        </div>
+                                        <div class="job-detail-card__pill"><span>Đang tuyển</span></div>
+                                    </div>
+                                    <div class="job-detail-card__body">
+                                        <div class="job-detail-card__titles">
+                                            <p class="job-detail-card__company">Công ty Cổ phần MISA</p>
+                                            <h3 class="job-detail-card__name">Chuyên viên Truyền thông Sáng tạo</h3>
+                                        </div>
+                                        <div class="job-detail-card__facts">
+                                            <div class="job-detail-card__fact"><span class="job-detail-card__fact-icon"
+                                                    aria-hidden="true"><img
+                                                        src="https://www.figma.com/api/mcp/asset/204f982a-784e-4050-87ae-3464970e2fa8"
+                                                        width="20" height="20" alt=""></span>
+                                                <p><span class="job-detail__fact-label">Mức lương: </span><span
+                                                        class="job-detail__fact-strong">15.000.000 -
+                                                        25.000.000đ/tháng</span></p>
+                                            </div>
+                                            <div class="job-detail-card__fact job-detail-card__fact--pin"><span
+                                                    class="job-detail-card__fact-icon" aria-hidden="true"><img
+                                                        src="https://www.figma.com/api/mcp/asset/4dd2517c-ad2f-4bbc-8dbe-4ec924952930"
+                                                        width="20" height="20" alt=""></span>
+                                                <p>Địa chỉ làm việc: Hà Nội, Việt Nam</p>
+                                            </div>
+                                            <div class="job-detail-card__fact job-detail-card__fact--pin"><span
+                                                    class="job-detail-card__fact-icon" aria-hidden="true"><img
+                                                        src="https://www.figma.com/api/mcp/asset/3adfa011-6a44-4aa9-99be-6e4e29d024cf"
+                                                        width="20" height="20" alt=""></span>
+                                                <p><span>Hạn ứng tuyển: </span><strong>29/04/2026</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-detail-card__type"><span class="job-detail-card__type-icon"
+                                            aria-hidden="true"><img
+                                                src="https://www.figma.com/api/mcp/asset/fa5abd99-ae1c-4bd0-a3a1-1d558d10d621"
+                                                width="20" height="20" alt=""></span><span>Thực tập</span></div>
+                                </div>
+                                <hr class="job-detail__rule job-detail__rule--card">
+                                <div class="job-detail-card__footer">
+                                    <div class="job-detail-card__posted"><span aria-hidden="true"><img
+                                                src="https://www.figma.com/api/mcp/asset/be3f10fe-e846-4289-bff6-6dad45e9d01f"
+                                                width="20" height="20" alt=""></span>
+                                        <p>Ngày đăng: 05/04/2036</p>
+                                    </div>
+                                    <a href="#" class="job-detail-card__btn">Xem chi tiết</a>
+                                </div>
+                            </article>
+                            <article class="job-detail-card">
+                                <div class="job-detail-card__row">
+                                    <div class="job-detail-card__brand">
+                                        <div class="job-detail-card__logo-frame">
+                                            <div class="job-detail-card__logo"><img
+                                                    src="https://www.figma.com/api/mcp/asset/cd4954c2-c866-4792-8a1c-4c4254e052a3"
+                                                    alt="MISA"></div>
+                                        </div>
+                                        <div class="job-detail-card__pill"><span>Đang tuyển</span></div>
+                                    </div>
+                                    <div class="job-detail-card__body">
+                                        <div class="job-detail-card__titles">
+                                            <p class="job-detail-card__company">Công ty Cổ phần MISA</p>
+                                            <h3 class="job-detail-card__name">Chuyên viên Truyền thông Sáng tạo</h3>
+                                        </div>
+                                        <div class="job-detail-card__facts">
+                                            <div class="job-detail-card__fact"><span class="job-detail-card__fact-icon"
+                                                    aria-hidden="true"><img
+                                                        src="https://www.figma.com/api/mcp/asset/204f982a-784e-4050-87ae-3464970e2fa8"
+                                                        width="20" height="20" alt=""></span>
+                                                <p><span class="job-detail__fact-label">Mức lương: </span><span
+                                                        class="job-detail__fact-strong">15.000.000 -
+                                                        25.000.000đ/tháng</span></p>
+                                            </div>
+                                            <div class="job-detail-card__fact job-detail-card__fact--pin"><span
+                                                    class="job-detail-card__fact-icon" aria-hidden="true"><img
+                                                        src="https://www.figma.com/api/mcp/asset/4dd2517c-ad2f-4bbc-8dbe-4ec924952930"
+                                                        width="20" height="20" alt=""></span>
+                                                <p>Địa chỉ làm việc: Hà Nội, Việt Nam</p>
+                                            </div>
+                                            <div class="job-detail-card__fact job-detail-card__fact--pin"><span
+                                                    class="job-detail-card__fact-icon" aria-hidden="true"><img
+                                                        src="https://www.figma.com/api/mcp/asset/3adfa011-6a44-4aa9-99be-6e4e29d024cf"
+                                                        width="20" height="20" alt=""></span>
+                                                <p><span>Hạn ứng tuyển: </span><strong>29/04/2026</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-detail-card__type"><span class="job-detail-card__type-icon"
+                                            aria-hidden="true"><img
+                                                src="https://www.figma.com/api/mcp/asset/fa5abd99-ae1c-4bd0-a3a1-1d558d10d621"
+                                                width="20" height="20" alt=""></span><span>Thực tập</span></div>
+                                </div>
+                                <hr class="job-detail__rule job-detail__rule--card">
+                                <div class="job-detail-card__footer">
+                                    <div class="job-detail-card__posted"><span aria-hidden="true"><img
+                                                src="https://www.figma.com/api/mcp/asset/be3f10fe-e846-4289-bff6-6dad45e9d01f"
+                                                width="20" height="20" alt=""></span>
+                                        <p>Ngày đăng: 05/04/2036</p>
+                                    </div>
+                                    <a href="#" class="job-detail-card__btn">Xem chi tiết</a>
+                                </div>
+                            </article>
+                            <article class="job-detail-card">
+                                <div class="job-detail-card__row">
+                                    <div class="job-detail-card__brand">
+                                        <div class="job-detail-card__logo-frame">
+                                            <div class="job-detail-card__logo"><img
+                                                    src="https://www.figma.com/api/mcp/asset/cd4954c2-c866-4792-8a1c-4c4254e052a3"
+                                                    alt="MISA"></div>
+                                        </div>
+                                        <div class="job-detail-card__pill"><span>Đang tuyển</span></div>
+                                    </div>
+                                    <div class="job-detail-card__body">
+                                        <div class="job-detail-card__titles">
+                                            <p class="job-detail-card__company">Công ty Cổ phần MISA</p>
+                                            <h3 class="job-detail-card__name">Chuyên viên Truyền thông Sáng tạo</h3>
+                                        </div>
+                                        <div class="job-detail-card__facts">
+                                            <div class="job-detail-card__fact"><span class="job-detail-card__fact-icon"
+                                                    aria-hidden="true"><img
+                                                        src="https://www.figma.com/api/mcp/asset/204f982a-784e-4050-87ae-3464970e2fa8"
+                                                        width="20" height="20" alt=""></span>
+                                                <p><span class="job-detail__fact-label">Mức lương: </span><span
+                                                        class="job-detail__fact-strong">15.000.000 -
+                                                        25.000.000đ/tháng</span></p>
+                                            </div>
+                                            <div class="job-detail-card__fact job-detail-card__fact--pin"><span
+                                                    class="job-detail-card__fact-icon" aria-hidden="true"><img
+                                                        src="https://www.figma.com/api/mcp/asset/4dd2517c-ad2f-4bbc-8dbe-4ec924952930"
+                                                        width="20" height="20" alt=""></span>
+                                                <p>Địa chỉ làm việc: Hà Nội, Việt Nam</p>
+                                            </div>
+                                            <div class="job-detail-card__fact job-detail-card__fact--pin"><span
+                                                    class="job-detail-card__fact-icon" aria-hidden="true"><img
+                                                        src="https://www.figma.com/api/mcp/asset/3adfa011-6a44-4aa9-99be-6e4e29d024cf"
+                                                        width="20" height="20" alt=""></span>
+                                                <p><span>Hạn ứng tuyển: </span><strong>29/04/2026</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-detail-card__type"><span class="job-detail-card__type-icon"
+                                            aria-hidden="true"><img
+                                                src="https://www.figma.com/api/mcp/asset/fa5abd99-ae1c-4bd0-a3a1-1d558d10d621"
+                                                width="20" height="20" alt=""></span><span>Thực tập</span></div>
+                                </div>
+                                <hr class="job-detail__rule job-detail__rule--card">
+                                <div class="job-detail-card__footer">
+                                    <div class="job-detail-card__posted"><span aria-hidden="true"><img
+                                                src="https://www.figma.com/api/mcp/asset/be3f10fe-e846-4289-bff6-6dad45e9d01f"
+                                                width="20" height="20" alt=""></span>
+                                        <p>Ngày đăng: 05/04/2036</p>
+                                    </div>
+                                    <a href="#" class="job-detail-card__btn">Xem chi tiết</a>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                    <aside class="job-detail__aside" aria-label="Nhà tuyển dụng">
+                        <div class="job-detail__company-card">
+                            <div class="job-detail__company-brand">
+                                <div class="job-detail__company-logo-wrap">
+                                    <div class="job-detail__company-logo">
+                                        <img
+                                            src="https://www.figma.com/api/mcp/asset/cd4954c2-c866-4792-8a1c-4c4254e052a3"
+                                            alt="MISA"></div>
+                                </div>
+                                <p class="job-detail__company-name">Công ty Cổ phần MISA</p>
+                            </div>
+                            <hr class="job-detail__rule">
+                            <div class="job-detail__company-rows">
+                                <div class="job-detail__company-row">
+                                    <div class="job-detail__company-icon" aria-hidden="true"> <i class="fa-solid fa-location-dot color-blue"></i></div>
+                                    <div class="job-detail__company-text">
+                                        <p class="job-detail__contact-label">Địa chỉ:</p>
+                                        <p class="job-detail__company-address">Tầng 9, tòa nhà Technosoft, phố Duy Tân,
+                                            phường Cầu Giấy,&nbsp;TP.Hà Nội</p>
+                                    </div>
+                                </div>
+                                <div class="job-detail__company-row">
+                                    <div class="job-detail__company-icon job-detail__company-icon--mail"
+                                        aria-hidden="true">
+                                        <i class="fa-solid fa-envelope color-blue"></i>
+                                    </div>
+                                    <div class="job-detail__company-text">
+                                        <p class="job-detail__contact-label">Email:</p>
+                                        <p class="job-detail__company-value">ntha12@misa.com.vn</p>
+                                    </div>
+                                </div>
+                                <div class="job-detail__company-row">
+                                    <div class="job-detail__company-icon" aria-hidden="true"><i class="fa-solid fa-phone color-blue"></i></div>
+                                    <div class="job-detail__company-text">
+                                        <p class="job-detail__contact-label">Điện Thoại:</p>
+                                        <p class="job-detail__company-value">0368338283</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+
+       <footer class="site-footer">
+        <div class="site-footer__bg" aria-hidden="true">
+            <img src="./assets/footer-bg.jpg" alt="">
+        </div>
+        <div class="site-footer__inner">
+            <div class="site-footer__grid">
+                <div class="site-footer__col site-footer__col--info">
+                    <div class="site-footer__brand">
+                        <p>mạng lưới Cựu sinh viên</p>
+                        <p>HỌC VIỆN NGOẠI GIAO</p>
+                        <p>(DAV ALUMNI NETWORK)</p>
+                    </div>
+
+                    <div class="site-footer__line">
+                        <span class="site-footer__line-icon" aria-hidden="true">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <div class="site-footer__line-body">
+                            <p class="site-footer__line-title">Địa chỉ:</p>
+                            <p class="site-footer__line-text">Số 69 Chùa Láng, phường Láng Thượng, quận Đống Đa, thành phố Hà Nội.</p>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__split">
+                        <div class="site-footer__line">
+                            <span class="site-footer__line-icon" aria-hidden="true">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <div class="site-footer__line-body">
+                                <p class="site-footer__line-title">Email:</p>
+                                <p class="site-footer__line-text">alumni@dav.edu.vn</p>
+                            </div>
+                        </div>
+                        <div class="site-footer__line">
+                            <span class="site-footer__line-icon" aria-hidden="true">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <div class="site-footer__line-body">
+                                <p class="site-footer__line-title">Điện thoại:</p>
+                                <p class="site-footer__line-text">024.38344540</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="site-footer__rule">
+
+                    <div class="site-footer__line">
+                        <span class="site-footer__line-icon" aria-hidden="true">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        <div class="site-footer__line-body">
+                            <p class="site-footer__line-title">Ban liên lạc:</p>
+                            <p class="site-footer__line-italic">Người phụ trách: Nguyễn Văn A - 0984 584 199</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-footer__col site-footer__col--links">
+                    <p class="site-footer__heading">liên kết nhanh</p>
+                    <ul class="site-footer__links">
+                        <li><a href="./su-mang-tam-nhin.html">Giới thiệu</a></li>
+                        <li><a href="./theo-dong-ky-uc.html">Theo dòng ký ức</a></li>
+                        <li><a href="./tin-tuc.html">Tin tức - Sự kiện</a></li>
+                        <li><a href="./dav-alumni-cac-khoa.html">mạng lưới Alumni</a></li>
+                        <li><a href="./vi-the-he-tuong-lai.html">Vì thế hệ tương lai</a></li>
+                        <li><a href="./tuyen-dung.html">Cơ hội việc làm</a></li>
+                        <li><a href="./lien-he.html">liên hệ</a></li>
+                        <li><a href="#">Quy chế hội viên</a></li>
+                    </ul>
+                </div>
+
+                <div class="site-footer__col site-footer__col--news">
+                    <p class="site-footer__heading">Đăng ký nhận tin</p>
+                    <form class="site-footer__subscribe" action="#" method="post" novalidate>
+                        <label class="site-footer__sr-only" for="footer-news-email">Email của bạn</label>
+                        <div class="site-footer__subscribe-field">
+                            <input id="footer-news-email" type="email" name="email" placeholder="Email của bạn *">
+                            <button type="submit" class="site-footer__subscribe-send">
+                                <span>Send</span>
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <p class="site-footer__heading">Kết nối với chúng tôi</p>
+                    <ul class="site-footer__social">
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--fb" aria-hidden="true">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </span>
+                                <span>Fanpage</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--fb-group" aria-hidden="true">
+                                    <i class="fa-solid fa-people-group"></i>
+                                </span>
+                                <span>Group cộng đồng facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--tiktok" aria-hidden="true">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </span>
+                                <span>hocvienngoaigiao.dav</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="site-footer__social-row">
+                                <span class="site-footer__social-icon site-footer__social-icon--ig" aria-hidden="true">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                                <span>hocvienngoaigiao.dav</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="site-footer__copyright">Copyright © 2026 DAV Alumni. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/header-user-menu.js"></script>
+    <script src="./js/chi-tiet-cong-viec.js"></script>
+</body>
+
+</html>

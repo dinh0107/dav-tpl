@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký Cán bộ &amp; Giảng viên | DAV Alumni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="page-register-dav">
+    <main class="register-dav">
+        <div class="register-dav__bg" aria-hidden="true">
+            <img src="./assets/dang-ky-bg.jpg" alt="">
+            <span class="register-dav__overlay"></span>
+        </div>
+
+        <form class="register-dav__card register-dav__card--form" novalidate aria-labelledby="register-form-title">
+            <header class="register-form__head">
+                <div class="register-form__heading">
+                    <p class="register-form__welcome">Xin chào!</p>
+                    <h1 class="register-form__title" id="register-form-title">Đăng ký tài khoản cán bộ &amp; Giảng viên</h1>
+                </div>
+                <a href="./index.html" class="register-form__logo" aria-label="DAV Alumni">
+                    <img src="./assets/dav-form-logo.png" alt="">
+                </a>
+            </header>
+
+            <div class="register-form__fields">
+                <div class="register-form__row">
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="rf-name">Họ và tên <span class="register-form__req" aria-hidden="true">*</span></label>
+                        <div class="register-form__input">
+                            <input id="rf-name" name="fullname" type="text" required>
+                        </div>
+                    </div>
+
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="rf-email">Email <span class="register-form__req" aria-hidden="true">*</span></label>
+                        <div class="register-form__input">
+                            <input id="rf-email" name="email" type="email" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="register-form__row">
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="rf-dob">Ngày sinh <span class="register-form__req" aria-hidden="true">*</span></label>
+                        <div class="register-form__input">
+                            <input id="rf-dob" name="dob" type="date" required>
+                        </div>
+                    </div>
+
+                    <fieldset class="register-form__field register-form__field--gender">
+                        <legend class="register-form__label">Giới tính <span class="register-form__req" aria-hidden="true">*</span></legend>
+                        <div class="register-form__radios">
+                            <label class="register-form__radio">
+                                <input type="radio" name="gender" value="male" checked>
+                                <span class="register-form__radio-mark" aria-hidden="true"></span>
+                                <span class="register-form__radio-text">Nam</span>
+                            </label>
+                            <label class="register-form__radio">
+                                <input type="radio" name="gender" value="female">
+                                <span class="register-form__radio-mark" aria-hidden="true"></span>
+                                <span class="register-form__radio-text">Nữ</span>
+                            </label>
+                            <label class="register-form__radio">
+                                <input type="radio" name="gender" value="other">
+                                <span class="register-form__radio-mark" aria-hidden="true"></span>
+                                <span class="register-form__radio-text">Khác</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="register-form__row">
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="rf-unit">Đơn vị công tác <span class="register-form__req" aria-hidden="true">*</span></label>
+                        <div class="register-form__input register-form__input--select">
+                            <select id="rf-unit" name="unit" required>
+                                <option value="" disabled selected>--Chọn--</option>
+                                <option>Khoa Quan hệ quốc tế</option>
+                                <option>Khoa Luật quốc tế</option>
+                                <option>Khoa Kinh tế quốc tế</option>
+                                <option>Khoa Truyền thông và Văn hóa đối ngoại</option>
+                                <option>Khoa Ngoại ngữ</option>
+                            </select>
+                            <i class="register-form__chevron fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="rf-position">Chức danh <span class="register-form__req" aria-hidden="true">*</span></label>
+                        <div class="register-form__input">
+                            <input id="rf-position" name="position" type="text" placeholder="Chức danh" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="register-form__row">
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="rf-tenure">Thời gian công tác <span class="register-form__req" aria-hidden="true">*</span></label>
+                        <div class="register-form__input">
+                            <input id="rf-tenure" name="tenure" type="text" placeholder="2010 - nay" required>
+                        </div>
+                    </div>
+
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="rf-major">Lĩnh vực chuyên môn <span class="register-form__req" aria-hidden="true">*</span></label>
+                        <div class="register-form__input register-form__input--select">
+                            <select id="rf-major" name="major" required>
+                                <option value="" disabled selected>--Chọn--</option>
+                                <option>Quan hệ quốc tế</option>
+                                <option>Luật quốc tế</option>
+                                <option>Kinh tế đối ngoại</option>
+                                <option>Truyền thông quốc tế</option>
+                            </select>
+                            <i class="register-form__chevron fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="register-form__row">
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="rf-status">Trạng thái công tác <span class="register-form__req" aria-hidden="true">*</span></label>
+                        <div class="register-form__input register-form__input--select">
+                            <select id="rf-status" name="status" required>
+                                <option selected>Đang công tác</option>
+                                <option>Đã nghỉ hưu</option>
+                                <option>Đã chuyển công tác</option>
+                            </select>
+                            <i class="register-form__chevron fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="rf-type">Phân loại <span class="register-form__req" aria-hidden="true">*</span></label>
+                        <div class="register-form__input register-form__input--select">
+                            <select id="rf-type" name="type" required>
+                                <option selected>Giảng viên thỉnh giảng</option>
+                                <option>Giảng viên cơ hữu</option>
+                                <option>Cán bộ hành chính</option>
+                            </select>
+                            <i class="register-form__chevron fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="register-form__row">
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="rf-pass">Mật khẩu <span class="register-form__req" aria-hidden="true">*</span></label>
+                        <div class="register-form__input register-form__input--password">
+                            <input id="rf-pass" name="password" type="password" placeholder="Nhập mật khẩu" required>
+                            <button type="button" class="register-form__pwd-toggle" data-pwd-toggle="rf-pass" aria-label="Hiện/ẩn mật khẩu">
+                                <i class="fa-solid fa-eye-slash" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="rf-pass2">Nhập lại mật khẩu <span class="register-form__req" aria-hidden="true">*</span></label>
+                        <div class="register-form__input register-form__input--password">
+                            <input id="rf-pass2" name="password_confirm" type="password" placeholder="Nhập mật khẩu" required>
+                            <button type="button" class="register-form__pwd-toggle" data-pwd-toggle="rf-pass2" aria-label="Hiện/ẩn mật khẩu">
+                                <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="register-form__footer">
+                <label class="register-form__check">
+                    <input type="checkbox" name="agree" checked required>
+                    <span class="register-form__check-mark" aria-hidden="true">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span class="register-form__check-text">Tôi đồng ý cung cấp và cam kết thông tin trên là chính xác</span>
+                </label>
+
+                <div class="register-form__actions">
+                    <a href="./dang-nhap.html" class="register-form__btn register-form__btn--ghost">Đăng nhập</a>
+                    <button type="submit" class="register-form__btn register-form__btn--primary">Đăng ký</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="./js/dang-ky-form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách ứng viên | DAV Alumni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="page-profile-dav page-business-profile-dav page-applicants-dav">
+    <header class="app-topbar">
+        <div class="app-topbar__left">
+            <button type="button" class="app-topbar__menu" aria-label="Mở menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <a href="./index.html" class="app-topbar__brand">
+                <span class="app-topbar__logo">
+                    <img src="./assets/dav-form-logo.png" alt="">
+                </span>
+                <span class="app-topbar__brand-text">mạng lưới CỰU SINH VIÊN Học viện Ngoại giao</span>
+            </a>
+        </div>
+
+        <div class="app-topbar__right">
+            <button type="button" class="app-topbar__notify" aria-label="Thông báo">
+                <i class="fa-regular fa-bell" aria-hidden="true"></i>
+                <span class="app-topbar__notify-badge" aria-label="2 thông báo chưa đọc">2</span>
+            </button>
+
+            <button type="button" class="app-topbar__user" aria-haspopup="menu">
+                <span class="app-topbar__avatar">
+                    <img src="./assets/user-avatar.png" alt="">
+                    <span class="app-topbar__avatar-status" aria-hidden="true"></span>
+                </span>
+                <span class="app-topbar__user-name">Phúc Nguyễn Văn</span>
+                <i class="app-topbar__user-chev fa-solid fa-caret-down" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="app-shell">
+        <aside class="app-sidebar app-sidebar--business" aria-label="Menu doanh nghiệp">
+            <div class="app-sidebar__profile">
+                <div class="app-sidebar__avatar app-sidebar__avatar--business">
+                    <img src="./assets/misa-logo.png" alt="Logo Công ty cổ phần Misa">
+                    <span class="app-sidebar__verified" aria-label="Đã xác minh">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <p class="app-sidebar__name">Công ty cổ phần Misa</p>
+            </div>
+
+            <nav class="app-sidebar__nav">
+                <a href="./ho-so-doanh-nghiep.html" class="app-sidebar__nav-item">
+                    <i class="app-sidebar__nav-icon fa-regular fa-building" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Hồ sơ doanh nghiệp</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a href="./tin-tuyen-dung-admin.html" class="app-sidebar__nav-item is-active" aria-current="page">
+                    <i class="app-sidebar__nav-icon fa-solid fa-briefcase" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Tin tuyển dụng</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+                <a href="./doi-mat-khau.html" class="app-sidebar__nav-item">
+                    <i class="app-sidebar__nav-icon fa-solid fa-lock" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Đổi mật khẩu</span>
+                    <i class="app-sidebar__nav-chev fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </a>
+
+                <hr class="app-sidebar__divider">
+
+                <a href="./dang-nhap.html" class="app-sidebar__nav-item app-sidebar__nav-item--logout">
+                    <i class="app-sidebar__nav-icon fa-solid fa-right-from-bracket" aria-hidden="true"></i>
+                    <span class="app-sidebar__nav-label">Đăng xuất</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="app-main">
+            <div class="applicants">
+                <div class="applicants__head">
+                    <a class="applicants__back" href="./tin-tuyen-dung-admin.html">
+                        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                        <span>Chuyên viên Truyền thông Sáng tạo</span>
+                    </a>
+                    <a class="applicants__add" href="./dang-tin-tuyen-dung.html">
+                        <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                        <span>Đăng tin mới</span>
+                    </a>
+                </div>
+
+                <section class="applicants__card" aria-label="Danh sách ứng viên">
+                    <div class="applicants__filters">
+                        <label class="applicants__search">
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            <input type="text" placeholder="Tìm ứng viên.." aria-label="Tìm ứng viên">
+                        </label>
+
+                        <div class="applicants__filter">
+                            <div class="applicants__filter-display">
+                                <span class="applicants__filter-prefix">Trạng thái hiển thị:</span>
+                                <span class="applicants__filter-value" data-filter-value>Tất cả</span>
+                            </div>
+                            <i class="applicants__filter-chev fa-solid fa-chevron-down" aria-hidden="true"></i>
+                            <select class="applicants__filter-native" aria-label="Trạng thái hiển thị" data-filter-select>
+                                <option selected>Tất cả</option>
+                                <option>Chưa xem</option>
+                                <option>Đã xem</option>
+                            </select>
+                        </div>
+
+                        <div class="applicants__filter applicants__filter--date">
+                            <i class="applicants__filter-icon fa-regular fa-calendar" aria-hidden="true"></i>
+                            <div class="applicants__filter-display">
+                                <span class="applicants__filter-prefix">Ngày ứng tuyển:</span>
+                                <span class="applicants__filter-value" data-filter-value>Tất cả thời gian</span>
+                            </div>
+                            <select class="applicants__filter-native" aria-label="Ngày ứng tuyển" data-filter-select>
+                                <option selected>Tất cả thời gian</option>
+                                <option>Hôm nay</option>
+                                <option>7 ngày qua</option>
+                                <option>30 ngày qua</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p class="applicants__count">Tìm thấy <span class="applicants__count-num">5</span> ứng viên</p>
+
+                    <div class="applicants__table" role="table">
+                        <div class="applicants__table-head" role="row">
+                            <div class="applicants__cell applicants__cell--head applicants__cell--applicant" role="columnheader">Ứng viên</div>
+                            <div class="applicants__cell applicants__cell--head applicants__cell--time" role="columnheader">Thời gian</div>
+                            <div class="applicants__cell applicants__cell--head applicants__cell--actions" role="columnheader">Thao tác</div>
+                        </div>
+
+                        <article class="applicants__row" role="row">
+                            <div class="applicants__cell applicants__cell--applicant-body" role="cell">
+                                <div class="applicants__profile">
+                                    <div class="applicants__avatar applicants__avatar--blue" aria-hidden="true">NA</div>
+                                    <span class="applicants__status applicants__status--unread">Chưa xem</span>
+                                </div>
+                                <div class="applicants__info">
+                                    <p class="applicants__name applicants__name--unread">Nguyễn Quốc Anh</p>
+                                    <p class="applicants__contact">
+                                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                                        <span>quocanhtx@gmail.com</span>
+                                    </p>
+                                    <p class="applicants__contact">
+                                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                        <span>0368338283</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="applicants__cell applicants__cell--time-body" role="cell">
+                                <p class="applicants__time">
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                    <span>Ứng tuyển lúc: 08/04/2026 10:16</span>
+                                </p>
+                            </div>
+                            <div class="applicants__cell applicants__cell--actions-body" role="cell">
+                                <button type="button" class="applicants__cv" data-cv-open aria-label="Xem CV của Nguyễn Quốc Anh">Xem CV</button>
+                            </div>
+                        </article>
+
+                        <article class="applicants__row" role="row">
+                            <div class="applicants__cell applicants__cell--applicant-body" role="cell">
+                                <div class="applicants__profile">
+                                    <div class="applicants__avatar applicants__avatar--green" aria-hidden="true">TH</div>
+                                    <span class="applicants__status applicants__status--read">Đã xem</span>
+                                </div>
+                                <div class="applicants__info">
+                                    <p class="applicants__name">Trần Thị Khánh Huyền</p>
+                                    <p class="applicants__contact">
+                                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                                        <span>khanhuyenttkh@gmail.com</span>
+                                    </p>
+                                    <p class="applicants__contact">
+                                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                        <span>0368338283</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="applicants__cell applicants__cell--time-body" role="cell">
+                                <p class="applicants__time">
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                    <span>Ứng tuyển lúc: 08/04/2026 10:16</span>
+                                </p>
+                            </div>
+                            <div class="applicants__cell applicants__cell--actions-body" role="cell">
+                                <button type="button" class="applicants__cv" data-cv-open aria-label="Xem CV của Trần Thị Khánh Huyền">Xem CV</button>
+                            </div>
+                        </article>
+
+                        <article class="applicants__row" role="row">
+                            <div class="applicants__cell applicants__cell--applicant-body" role="cell">
+                                <div class="applicants__profile">
+                                    <div class="applicants__avatar applicants__avatar--blue" aria-hidden="true">NA</div>
+                                    <span class="applicants__status applicants__status--unread">Chưa xem</span>
+                                </div>
+                                <div class="applicants__info">
+                                    <p class="applicants__name">Nguyễn Quốc Anh</p>
+                                    <p class="applicants__contact">
+                                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                                        <span>quocanhtx.com.vn</span>
+                                    </p>
+                                    <p class="applicants__contact">
+                                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                        <span>0368338283</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="applicants__cell applicants__cell--time-body" role="cell">
+                                <p class="applicants__time">
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                    <span>Ứng tuyển lúc: 08/04/2026 10:16</span>
+                                </p>
+                            </div>
+                            <div class="applicants__cell applicants__cell--actions-body" role="cell">
+                                <button type="button" class="applicants__cv" data-cv-open aria-label="Xem CV của Nguyễn Quốc Anh">Xem CV</button>
+                            </div>
+                        </article>
+
+                        <article class="applicants__row" role="row">
+                            <div class="applicants__cell applicants__cell--applicant-body" role="cell">
+                                <div class="applicants__profile">
+                                    <div class="applicants__avatar applicants__avatar--green" aria-hidden="true">TH</div>
+                                    <span class="applicants__status applicants__status--read">Đã xem</span>
+                                </div>
+                                <div class="applicants__info">
+                                    <p class="applicants__name">Trần Thị Khánh Huyền</p>
+                                    <p class="applicants__contact">
+                                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                                        <span>khanhuyenttkh@gmail.com</span>
+                                    </p>
+                                    <p class="applicants__contact">
+                                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                        <span>0368338283</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="applicants__cell applicants__cell--time-body" role="cell">
+                                <p class="applicants__time">
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                    <span>Ứng tuyển lúc: 08/04/2026 10:16</span>
+                                </p>
+                            </div>
+                            <div class="applicants__cell applicants__cell--actions-body" role="cell">
+                                <button type="button" class="applicants__cv" data-cv-open aria-label="Xem CV của Trần Thị Khánh Huyền">Xem CV</button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div class="cv-modal" id="cv-modal" hidden role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+        <div class="cv-modal__backdrop" data-cv-close aria-hidden="true"></div>
+        <div class="cv-modal__panel" role="document">
+            <header class="cv-modal__header">
+                <div class="cv-modal__heading">
+                    <h2 class="cv-modal__title" id="cv-modal-title">Chi tiết hồ sơ ứng viên</h2>
+                    <p class="cv-modal__subtitle">
+                        <span class="cv-modal__subtitle-label">Ứng tuyển vị trí:</span>
+                        <span class="cv-modal__subtitle-value">Thực tập sinh Marketing</span>
+                    </p>
+                </div>
+                <button type="button" class="cv-modal__close" data-cv-close aria-label="Đóng">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </header>
+
+            <div class="cv-modal__body">
+                <aside class="cv-modal__profile">
+                    <div class="cv-modal__profile-head">
+                        <div class="cv-modal__avatar applicants__avatar applicants__avatar--blue" aria-hidden="true">NA</div>
+                        <p class="cv-modal__profile-name">Nguyễn Quốc Anh</p>
+                        <div class="cv-modal__icons">
+                            <a class="cv-modal__icon-btn" href="tel:0368338283" aria-label="Gọi điện">
+                                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            </a>
+                            <a class="cv-modal__icon-btn" href="mailto:quocanhtx@gmail.com" aria-label="Gửi email">
+                                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <hr class="cv-modal__divider">
+
+                    <div class="cv-modal__field">
+                        <p class="cv-modal__field-label">Email:</p>
+                        <p class="cv-modal__field-value">quocanhtx@gmail.com</p>
+                    </div>
+
+                    <div class="cv-modal__field">
+                        <p class="cv-modal__field-label">Điện Thoại:</p>
+                        <p class="cv-modal__field-value">0368338283</p>
+                    </div>
+
+                    <a class="cv-modal__download" href="#" download>
+                        <span>Tải CV PDF</span>
+                    </a>
+                </aside>
+
+                <section class="cv-modal__main">
+                    <div class="cv-modal__section">
+                        <h3 class="cv-modal__section-title">
+                            <i class="fa-regular fa-envelope-open" aria-hidden="true"></i>
+                            <span>Thư xin việc</span>
+                        </h3>
+                        <div class="cv-modal__letter">
+                            <p>Dear HR Department of Vingroup,</p>
+                            <p>My name is Nguyen Quoc Anh, and I am currently a third-year student at the Diplomatic Academy of Vietnam. I am writing to express my interest in the Marketing Intern position at Vingroup.</p>
+                            <p>With a strong orientation toward external relations and communication, I have developed skills in English communication, professional email writing, and teamwork. I have also gained experience through participating in club activities and events, where I collaborated with different stakeholders and supported event organization.</p>
+                            <p>I am eager to learn, grow, and contribute in a professional environment like Vingroup.</p>
+                            <p>Thank you for your time and consideration. I look forward to your response.</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-modal__section">
+                        <h3 class="cv-modal__section-title">
+                            <i class="fa-solid fa-paperclip" aria-hidden="true"></i>
+                            <span>Hồ sơ đính kèm (CV)</span>
+                        </h3>
+                        <div class="cv-modal__cv">
+                            <img src="./assets/applicant-cv.jpg" alt="CV - Nguyễn Quốc Anh">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/ung-vien-cv.js"></script>
+</body>
+
+</html>
