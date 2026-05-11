@@ -9,8 +9,10 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 .page-contact-dav .contact-dav__banner-overlay {
   position: absolute;
@@ -137,7 +139,8 @@
   display: grid;
   grid-template-columns: 48px 1fr;
   grid-template-areas: "icon small" "icon strong";
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   text-decoration: none;
   align-items: center;
 }
@@ -154,7 +157,8 @@
 .page-contact-dav .contact-dav__social-card span img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
 }
 .page-contact-dav .contact-dav__social-card small {
@@ -219,7 +223,8 @@
 .page-contact-dav .contact-dav__map-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-contact-dav .career-network-footer__col--social a {
   display: flex;
@@ -404,7 +409,8 @@ a:hover {
   width: 24px;
   height: 24px;
   display: block;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .header-top__tagline {
@@ -451,7 +457,8 @@ a:hover {
   width: 24px;
   height: 24px;
   display: block;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .header-top__user {
@@ -477,7 +484,8 @@ a:hover {
   width: 24px;
   height: 24px;
   display: block;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header-top__user:focus-visible {
   outline: 2px solid #fff;
@@ -664,7 +672,8 @@ a:hover {
   width: 20px;
   height: 20px;
   display: block;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header-top__lang span {
   color: #005ca1;
@@ -692,7 +701,8 @@ a:hover {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .right-header {
@@ -755,7 +765,8 @@ a:hover {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .swich-language span {
   color: #005ca1;
@@ -806,7 +817,8 @@ a:hover {
   width: 89px;
   height: 73px;
   aspect-ratio: 89/73;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .info-item {
@@ -953,7 +965,8 @@ a:hover {
 .banner_img {
   width: 100%;
   height: calc(100vh - 175px);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   aspect-ratio: 1;
 }
 
@@ -1028,8 +1041,8 @@ a:hover {
   text-transform: uppercase;
 }
 
-.page-section {
-  padding: 30px 0;
+.page-section-intro {
+  padding: 64px 0;
 }
 
 .description-section {
@@ -1057,6 +1070,7 @@ a:hover {
   font-style: normal;
   font-weight: 600;
   line-height: 26px;
+  width: -moz-max-content;
   width: max-content;
   text-decoration: none;
 }
@@ -1131,11 +1145,16 @@ a:hover {
   margin-top: 56px;
   width: 100%;
   aspect-ratio: 2;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.introduct {
+  padding: 64px 0;
 }
 
 .word-bg {
-  padding-top: 72px;
+  padding: 72px 0;
   background: linear-gradient(104deg, #FFF 7.25%, #DBF4FF 56.81%, #DBF4FF 98.43%);
 }
 
@@ -1181,7 +1200,8 @@ a:hover {
 .logo-1 {
   width: 100%;
   aspect-ratio: 1.5;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .custom-section {
@@ -1193,18 +1213,25 @@ a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .vector-img-2 {
   position: absolute;
   bottom: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .lanh-dao {
+  padding: 64px;
   background: url("../assets/Frame_1984078188.jpg") no-repeat;
+}
+
+.club-section {
+  padding: 72px 0;
 }
 
 .bg-blue-blur {
@@ -1254,7 +1281,8 @@ a:hover {
 .card-item_club img {
   width: 100%;
   aspect-ratio: 2;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 .card-item_club a {
@@ -1303,7 +1331,8 @@ a:hover {
   border-radius: 10px;
   width: 100%;
   height: 251.524px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .article-date {
@@ -1314,7 +1343,8 @@ a:hover {
 .article-date img {
   width: 60px;
   height: 75px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .month {
@@ -1468,7 +1498,8 @@ a:hover {
   border-top-right-radius: 10px;
   width: 100%;
   height: 252px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .article-card .card-text {
   color: #0A0A0A;
@@ -1578,7 +1609,8 @@ a:hover {
 .header-job .company-logo {
   width: 99px;
   height: 56px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-bottom: 10px;
 }
 .header-job .company-name {
@@ -1666,7 +1698,8 @@ a:hover {
 .partner img {
   width: 100%;
   aspect-ratio: 2;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .box-connect {
@@ -1951,8 +1984,10 @@ footer::after {
 .mv-hero__img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .mv-hero__gradient {
@@ -2066,7 +2101,8 @@ footer::after {
   width: 100%;
   display: block;
   aspect-ratio: 569/448;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .mv-photo-frame--flip {
@@ -2349,7 +2385,8 @@ footer::after {
 .history-hero__img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .history-hero__gradient {
@@ -2461,7 +2498,8 @@ footer::after {
 .history-item__media img {
   width: 100%;
   height: 280px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 12px;
   filter: sepia(0.65) saturate(0.6);
 }
@@ -2554,7 +2592,8 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .board-hero__gradient {
@@ -2707,7 +2746,8 @@ footer::after {
 .board-chair img {
   width: 100%;
   height: 296px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 2px solid #217fd6;
   border-radius: 12px;
 }
@@ -2759,7 +2799,8 @@ footer::after {
 .member-card .member-card__placeholder {
   width: 100%;
   aspect-ratio: 368/400;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 
@@ -2826,7 +2867,8 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-hero__overlay {
@@ -2948,7 +2990,8 @@ footer::after {
 .news-featured__main img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-featured__shade {
@@ -3023,7 +3066,8 @@ footer::after {
 .news-side-item img {
   width: 100%;
   height: 124px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-side-item__cat {
@@ -3069,7 +3113,8 @@ footer::after {
 .news-card img {
   width: 100%;
   height: 252px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-card__body {
@@ -3258,7 +3303,8 @@ footer::after {
   margin-top: 20px;
   border-radius: 12px;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-detail__tags {
@@ -3359,7 +3405,8 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .alumni-hero__overlay {
@@ -3499,7 +3546,8 @@ footer::after {
 .alumni-card__photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .alumni-card__meta {
@@ -3796,6 +3844,9 @@ footer::after {
   font-size: 16px;
   line-height: 24px;
 }
+.event-register__field input::-moz-placeholder {
+  color: #8c8c8c;
+}
 .event-register__field input::placeholder {
   color: #8c8c8c;
 }
@@ -3885,7 +3936,8 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-alumni-featured .alumni-hero__overlay {
   position: absolute;
@@ -4016,7 +4068,8 @@ footer::after {
 .page-alumni-featured .alumni-card__photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-alumni-featured .alumni-card__meta {
   position: absolute;
@@ -4168,7 +4221,8 @@ footer::after {
 .page-alumni-detail .alumni-detail__article > img {
   width: 100%;
   height: 416px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 12px;
 }
 .page-alumni-detail .alumni-detail__media {
@@ -4187,7 +4241,8 @@ footer::after {
 .page-alumni-detail .alumni-detail__video img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-alumni-detail .alumni-detail__video iframe {
   width: 100%;
@@ -4230,7 +4285,8 @@ footer::after {
 .page-alumni-detail .alumni-profile__hero img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-alumni-detail .alumni-profile__hero h3 {
   position: absolute;
@@ -4338,7 +4394,8 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-club-community .club-hero__overlay {
   position: absolute;
@@ -4394,7 +4451,8 @@ footer::after {
   width: 100%;
   height: 196px;
   border-radius: 8px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .page-club-community .club-card__footer {
@@ -4465,8 +4523,10 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .page-ambassador-club .ambassador-hero__overlay {
   position: absolute;
@@ -4612,7 +4672,8 @@ footer::after {
   width: 100%;
   height: 232px;
   border-radius: 8px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-ambassador-club .ambassador-program h3 {
   margin: 0;
@@ -4651,7 +4712,8 @@ footer::after {
 .page-ambassador-club .ambassador-chair__image-wrap img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-ambassador-club .ambassador-chair__content {
   display: flex;
@@ -4727,7 +4789,8 @@ footer::after {
   height: 80px;
   border-radius: 12px;
   border: 1px solid #8ecaf4;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   flex-shrink: 0;
 }
 .page-ambassador-club .ambassador-member__head h4 {
@@ -4838,8 +4901,10 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .page-alumni-cohorts .cohort-hero__overlay {
   position: absolute;
@@ -4939,6 +5004,9 @@ footer::after {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+}
+.page-alumni-cohorts .cohort-searchbox input::-moz-placeholder {
+  color: #8c8c8c;
 }
 .page-alumni-cohorts .cohort-searchbox input::placeholder {
   color: #8c8c8c;
@@ -5154,6 +5222,9 @@ footer::after {
   line-height: 24px;
   font-weight: 400;
 }
+.page-alumni-roster .alumni-roster-search input::-moz-placeholder {
+  color: #8c8c8c;
+}
 .page-alumni-roster .alumni-roster-search input::placeholder {
   color: #8c8c8c;
 }
@@ -5216,7 +5287,8 @@ footer::after {
 .page-alumni-roster .alumni-roster-card__avatar img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .page-alumni-roster .alumni-roster-card__name {
@@ -5280,7 +5352,9 @@ footer::after {
 }
 .page-alumni-roster .alumni-roster-pagination__ellipsis {
   cursor: default;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .page-alumni-roster .alumni-roster-pagination__arrow {
   border-radius: 60px;
@@ -5362,7 +5436,8 @@ footer::after {
 .page-alumni-roster .knowledge-card__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .page-alumni-roster .knowledge-card__body {
@@ -5531,8 +5606,10 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 .page-staff-faculty .staff-directory-hero__overlay {
   position: absolute;
@@ -5642,6 +5719,9 @@ footer::after {
   line-height: 24px;
   font-weight: 400;
 }
+.page-staff-faculty .staff-directory-search input::-moz-placeholder {
+  color: #8c8c8c;
+}
 .page-staff-faculty .staff-directory-search input::placeholder {
   color: #8c8c8c;
 }
@@ -5732,7 +5812,8 @@ footer::after {
 .page-staff-faculty .staff-card__avatar img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .page-staff-faculty .staff-card__identity {
@@ -5833,7 +5914,9 @@ footer::after {
 }
 .page-staff-faculty .staff-directory-pagination__ellipsis {
   cursor: default;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .page-staff-faculty .staff-directory-pagination__arrow {
   border-radius: 60px;
@@ -5892,8 +5975,10 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 .page-future-gens .future-hero__overlay {
   position: absolute;
@@ -5940,7 +6025,8 @@ footer::after {
 .page-future-gens .future-intro__photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .page-future-gens .future-intro__photo--main {
@@ -6133,7 +6219,8 @@ footer::after {
 .page-future-gens .future-program-card__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .page-future-gens .future-program-card__body {
@@ -6359,8 +6446,10 @@ footer::after {
 .page-future-gens .future-alumni-card__avatar img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   display: block;
   transform: scale(1.0244);
   transform-origin: center center;
@@ -6502,7 +6591,8 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .recruitment-hero__shade {
@@ -6607,6 +6697,10 @@ footer::after {
   line-height: 24px;
   color: #121212;
   background: transparent;
+}
+
+.recruitment-hero__input::-moz-placeholder {
+  color: #8c8c8c;
 }
 
 .recruitment-hero__input::placeholder {
@@ -7044,7 +7138,8 @@ footer::after {
   display: block;
   width: 124px;
   height: 70px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .recruitment-card__status {
@@ -7396,7 +7491,8 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-job-detail .job-detail__header-bar-bg::after {
   content: "";
@@ -8251,6 +8347,9 @@ footer::after {
   line-height: 24px;
   color: #101010;
 }
+.page-job-detail .job-detail__input--plain::-moz-placeholder {
+  color: #8c8c8c;
+}
 .page-job-detail .job-detail__input--plain::placeholder {
   color: #8c8c8c;
 }
@@ -8269,6 +8368,9 @@ footer::after {
   font-size: 16px;
   line-height: 24px;
   color: #101010;
+}
+.page-job-detail .job-detail__textarea::-moz-placeholder {
+  color: #8c8c8c;
 }
 .page-job-detail .job-detail__textarea::placeholder {
   color: #8c8c8c;
@@ -8671,7 +8773,8 @@ footer::after {
 .page-job-detail .job-detail__footer-bg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .page-job-detail .job-detail__footer-inner {
@@ -8821,6 +8924,10 @@ footer::after {
   font-size: 16px;
   line-height: 24px;
   color: #597e6e;
+}
+.page-job-detail .job-detail__news-input::-moz-placeholder {
+  color: #597e6e;
+  font-family: "Roboto", sans-serif;
 }
 .page-job-detail .job-detail__news-input::placeholder {
   color: #597e6e;
@@ -8993,8 +9100,10 @@ footer::after {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
-  object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 .page-career-network .career-network__banner-overlay {
   position: absolute;
@@ -9246,7 +9355,8 @@ footer::after {
   width: 100%;
   max-width: 1440px;
   height: 809px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-career-network .career-network-footer__inner {
   position: relative;
@@ -9404,7 +9514,8 @@ footer::after {
 .page-register-dav .register-dav__bg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .page-register-dav .register-dav__overlay {
@@ -9614,7 +9725,8 @@ footer::after {
   position: absolute;
   left: -28.38%;
   top: -46.08%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .register-form__fields {
@@ -9745,6 +9857,10 @@ footer::after {
   font: 400 16px/24px "Inter", sans-serif;
   color: #101010;
   height: 24px;
+}
+
+.register-form__input input::-moz-placeholder {
+  color: #8C8C8C;
 }
 
 .register-form__input input::placeholder {
@@ -10060,7 +10176,8 @@ footer::after {
   width: 127.5%;
   height: 100%;
   max-width: none;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .page-login-dav .login-dav__brand-gradient {
@@ -10073,7 +10190,8 @@ footer::after {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   mix-blend-mode: soft-light;
   opacity: 0.5;
   display: block;
@@ -10102,7 +10220,8 @@ footer::after {
 .page-login-dav .login-dav__brand-logo img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   display: block;
 }
 .page-login-dav .login-dav__brand-heading {
@@ -10247,6 +10366,9 @@ footer::after {
   padding: 0;
   margin: 0;
   height: 24px;
+}
+.page-login-dav .login-dav__input input::-moz-placeholder {
+  color: #8C8C8C;
 }
 .page-login-dav .login-dav__input input::placeholder {
   color: #8C8C8C;
@@ -10485,7 +10607,8 @@ footer::after {
   width: 154.89%;
   height: 189.49%;
   max-width: none;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .page-profile-dav .app-topbar__brand-text,
 .page-knowledge-dav .app-topbar__brand-text {
@@ -10562,7 +10685,8 @@ footer::after {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .page-profile-dav .app-topbar__avatar-status,
@@ -10639,7 +10763,8 @@ footer::after {
   width: 100%;
   height: 100%;
   border-radius: 12px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .page-profile-dav .app-sidebar__verified,
@@ -10892,6 +11017,10 @@ footer::after {
   opacity: 1;
   cursor: default;
 }
+.page-profile-dav .profile-card__form .register-form__input input:disabled::-moz-placeholder, .page-profile-dav .profile-card__form .register-form__input select:disabled::-moz-placeholder, .page-knowledge-dav .profile-card__form .register-form__input input:disabled::-moz-placeholder, .page-knowledge-dav .profile-card__form .register-form__input select:disabled::-moz-placeholder {
+  color: #8C8C8C;
+  -webkit-text-fill-color: #8C8C8C;
+}
 .page-profile-dav .profile-card__form .register-form__input input:disabled::placeholder,
 .page-profile-dav .profile-card__form .register-form__input select:disabled::placeholder,
 .page-knowledge-dav .profile-card__form .register-form__input input:disabled::placeholder,
@@ -11137,7 +11266,8 @@ footer::after {
 .page-knowledge-dav .knowledge-card__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   transition: transform 0.35s ease;
 }
@@ -11381,6 +11511,9 @@ footer::after {
   resize: vertical;
   width: 100%;
 }
+.page-add-article-dav .register-form__input--textarea textarea::-moz-placeholder {
+  color: #8C8C8C;
+}
 .page-add-article-dav .register-form__input--textarea textarea::placeholder {
   color: #8C8C8C;
 }
@@ -11548,7 +11681,8 @@ footer::after {
   background: #fff;
 }
 .page-business-profile-dav .app-sidebar__avatar--business img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   padding: 6px 8px;
   box-sizing: border-box;
 }
@@ -11587,7 +11721,9 @@ footer::after {
   align-items: center;
   gap: 8px;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   font: 400 16px/24px "Lato", sans-serif;
   color: #262626;
 }
@@ -11647,6 +11783,9 @@ footer::after {
   font: 400 16px/24px "Inter", sans-serif;
   color: #101010;
 }
+.page-add-job-dav .addjob-form__salary input::-moz-placeholder {
+  color: #101010;
+}
 .page-add-job-dav .addjob-form__salary input::placeholder {
   color: #101010;
 }
@@ -11672,7 +11811,8 @@ footer::after {
   background: transparent;
   outline: none;
   padding: 0;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   font: inherit;
   color: inherit;
@@ -11699,7 +11839,8 @@ footer::after {
   padding: 0;
   font: 400 16px/24px "Inter", sans-serif;
   color: #101010;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
 }
 .page-add-job-dav .addjob-form__date input[type=date]::-webkit-calendar-picker-indicator {
@@ -11862,6 +12003,9 @@ footer::after {
   padding: 0;
   font: 400 16px/24px "Inter", sans-serif;
   color: #101010;
+}
+.page-jobs-admin-dav .jobs__filter-input::-moz-placeholder {
+  color: #8C8C8C;
 }
 .page-jobs-admin-dav .jobs__filter-input::placeholder {
   color: #8C8C8C;
@@ -12134,6 +12278,7 @@ footer::after {
     overflow-x: auto;
   }
   .page-jobs-admin-dav .jobs__table-row {
+    width: -moz-max-content;
     width: max-content;
     min-width: 100%;
   }
@@ -12333,6 +12478,9 @@ footer::after {
   font: 400 16px/24px "Inter", sans-serif;
   color: #101010;
 }
+.page-applicants-dav .applicants__search input::-moz-placeholder {
+  color: #8C8C8C;
+}
 .page-applicants-dav .applicants__search input::placeholder {
   color: #8C8C8C;
 }
@@ -12384,7 +12532,8 @@ footer::after {
   height: 100%;
   opacity: 0;
   cursor: pointer;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   border: 0;
   background: transparent;
@@ -13002,7 +13151,8 @@ body.has-modal-open {
 .site-footer__bg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 
@@ -13182,6 +13332,10 @@ body.has-modal-open {
   color: #597E6E;
 }
 
+.site-footer__subscribe-field input::-moz-placeholder {
+  color: #597E6E;
+}
+
 .site-footer__subscribe-field input::placeholder {
   color: #597E6E;
 }
@@ -13329,4 +13483,4 @@ body.has-modal-open {
     margin-top: 32px;
     white-space: normal;
   }
-}
+}/*# sourceMappingURL=style.css.map */
