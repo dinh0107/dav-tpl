@@ -99,8 +99,8 @@ $('.list-article').slick({
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
-  prevArrow: "<button type='button' aria-label='bên trái' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-  nextArrow: "<button type='button'aria-label='bên phải' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  prevArrow: "<button type='button' aria-label='bên trái' class='slick-prev pull-left'><i class='fa-light fa-arrow-left' aria-hidden='true'></i></button>",
+  nextArrow: "<button type='button'aria-label='bên phải' class='slick-next pull-right'><i class='fa-light fa-arrow-right' aria-hidden='true'></i></button>",
 
   responsive: [
     {
@@ -139,8 +139,8 @@ $('.list-job').slick({
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
-  prevArrow: "<button type='button' aria-label='bên trái' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-  nextArrow: "<button type='button'aria-label='bên phải' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+ prevArrow: "<button type='button' aria-label='bên trái' class='slick-prev pull-left'><i class='fa-light fa-arrow-left' aria-hidden='true'></i></button>",
+  nextArrow: "<button type='button'aria-label='bên phải' class='slick-next pull-right'><i class='fa-light fa-arrow-right' aria-hidden='true'></i></button>",
 
   responsive: [
     {
