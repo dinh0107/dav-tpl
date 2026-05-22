@@ -1279,6 +1279,32 @@ a:hover {
     margin-bottom: 32px;
 }
 
+.page-section-intro {
+    .timeline-detail__year,
+    .timeline-detail__title,
+    .timeline-detail__desc {
+        transition: opacity 0.35s ease;
+    }
+
+    .timeline-detail--fade-out {
+        opacity: 0;
+    }
+
+    .timeline-detail--fade-in {
+        animation: timelineDetailFadeIn 0.35s ease forwards;
+    }
+}
+
+@keyframes timelineDetailFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .box-slider-item {
     position: relative;
 
