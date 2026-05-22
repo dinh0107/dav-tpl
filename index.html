@@ -22,18 +22,133 @@
 
 <body>
     <header>
+        <div class="header-mobile">
+            <div class="header-mobile__bar">
+                <button type="button" class="header-mobile__search" aria-label="Tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <a href="./index.html" class="header-mobile__logo">
+                    <img src="./assets/logo.png" alt="DAV Alumni">
+                </a>
+                <button type="button" class="header-mobile__toggle" id="header-mobile-toggle" aria-expanded="false"
+                    aria-controls="header-mobile-menu" aria-label="Mở menu">
+                    <span class="header-mobile__toggle-bar" aria-hidden="true"></span>
+                    <span class="header-mobile__toggle-bar" aria-hidden="true"></span>
+                    <span class="header-mobile__toggle-bar" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="header-mobile__overlay" id="header-mobile-overlay" hidden aria-hidden="true"></div>
+            <nav class="header-mobile__menu" id="header-mobile-menu" aria-label="Menu chính" hidden aria-hidden="true">
+                <button type="button" class="header-mobile__close" id="header-mobile-close" aria-label="Đóng menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="header-mobile__nav ul-reset">
+                    <li class="header-mobile__has-sub">
+                        <button type="button" class="header-mobile__nav-toggle" aria-expanded="false">
+                            Giới thiệu <i class="fa-regular fa-angle-down"></i>
+                        </button>
+                        <ul class="header-mobile__sub">
+                            <li><a href="./su-mang-tam-nhin.html">Sứ mạng &amp; tầm nhìn</a></li>
+                            <li><a href="./ban-dieu-hanh.html">Ban điều hành</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./theo-dong-ky-uc.html">Theo dòng ký ức</a></li>
+                    <li><a href="./tin-tuc.html">Tin tức - Sự kiện</a></li>
+                    <li><a href="./dav-alumni-cac-khoa.html">Mạng lưới Alumni</a></li>
+                    <li><a href="./vi-the-he-tuong-lai.html">Vì thế hệ tương lai</a></li>
+                    <li><a href="./tuyen-dung.html">Cơ hội việc làm</a></li>
+                </ul>
+                <div class="header-mobile__bottom">
+                    <div class="header-mobile__account">
+                        <div class="header-mobile__account-head">
+                            <img src="./assets/user.svg" alt="" width="40" height="40">
+                            <div>
+                                <p class="header-mobile__account-name">Nguyễn Văn Phúc</p>
+                                <p class="header-mobile__account-email">Phucnguyen@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="header-mobile__account-links">
+                            <a href="#" class="header-mobile__account-item">
+                                <span class="header-mobile__account-icon" aria-hidden="true"><i
+                                        class="fa-regular fa-user"></i></span>
+                                <span class="header-mobile__account-label">Hồ sơ cá nhân</span>
+                                <span class="header-mobile__account-chev" aria-hidden="true"><i
+                                        class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="#" class="header-mobile__account-item">
+                                <span class="header-mobile__account-icon" aria-hidden="true"><i
+                                        class="fa-solid fa-lock"></i></span>
+                                <span class="header-mobile__account-label">Đổi mật khẩu</span>
+                                <span class="header-mobile__account-chev" aria-hidden="true"><i
+                                        class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <a href="#" class="header-mobile__account-item header-mobile__account-item--danger">
+                                <span class="header-mobile__account-icon" aria-hidden="true"><i
+                                        class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                                <span class="header-mobile__account-label">Đăng xuất</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-mobile__lang">
+                        <span class="header-mobile__lang-label">Ngôn ngữ</span>
+                        <div class="header-mobile__lang-options" role="group" aria-label="Chọn ngôn ngữ">
+                            <button type="button" class="header-mobile__lang-btn is-active" aria-pressed="true"
+                                data-lang="vi">
+                                <img src="./assets/vn.svg" alt="" width="20" height="20"><span>VN</span>
+                            </button>
+                            <button type="button" class="header-mobile__lang-btn" aria-pressed="false" data-lang="en">
+                                <span class="header-mobile__lang-en">EN</span><span>EN</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <div class="header-top">
-            <div class="header-top__wrap" >
+            <div class="header-top__wrap">
                 <div class="header-top__left">
                     <span class="header-top__hat"><img src="./assets/hat.svg" alt=""></span>
                     <span class="header-top__tagline">mạng lưới CỰU SINH VIÊN Học viện Ngoại giao</span>
                 </div>
                 <div class="header-top__right">
-                    <div class="header-top__user-wrap"><button type="button" class="header-top__user" id="header-user-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="header-user-menu" aria-label="Menu tài khoản"><img src="./assets/user.svg" alt="" width="24" height="24"><span class="header-top__user-name">Phúc Nguyễn</span><span class="header-top__user-chev" aria-hidden="true"><i class="fa-solid fa-angle-down"></i></span></button><div class="header-top__dropdown" id="header-user-menu" role="menu" aria-labelledby="header-user-trigger" hidden aria-hidden="true"><div class="header-top__dropdown-head"><p class="header-top__dropdown-name">Nguyễn Văn Phúc</p><p class="header-top__dropdown-email">Phucnguyen@gmail.com</p></div><div class="header-top__dropdown-body"><a href="#" class="header-top__dropdown-item" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-regular fa-user"></i></span><span class="header-top__dropdown-label">Hồ sơ cá nhân</span><span class="header-top__dropdown-chev" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span></a><a href="#" class="header-top__dropdown-item" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-solid fa-lock"></i></span><span class="header-top__dropdown-label">Đổi mật khẩu</span><span class="header-top__dropdown-chev" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span></a><div class="header-top__dropdown-divider" role="separator"></div><a href="#" class="header-top__dropdown-item header-top__dropdown-item--danger" role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i class="fa-solid fa-arrow-right-from-bracket"></i></span><span class="header-top__dropdown-label">Đăng xuất</span></a></div></div></div>
+                    <div class="header-top__user-wrap"><button type="button" class="header-top__user"
+                            id="header-user-trigger" aria-expanded="false" aria-haspopup="menu"
+                            aria-controls="header-user-menu" aria-label="Menu tài khoản"><img src="./assets/user.svg"
+                                alt="" width="24" height="24"><span class="header-top__user-name">Phúc
+                                Nguyễn</span><span class="header-top__user-chev" aria-hidden="true"><i
+                                    class="fa-solid fa-angle-down"></i></span></button>
+                        <div class="header-top__dropdown" id="header-user-menu" role="menu"
+                            aria-labelledby="header-user-trigger" hidden aria-hidden="true">
+                            <div class="header-top__dropdown-head">
+                                <p class="header-top__dropdown-name">Nguyễn Văn Phúc</p>
+                                <p class="header-top__dropdown-email">Phucnguyen@gmail.com</p>
+                            </div>
+                            <div class="header-top__dropdown-body"><a href="#" class="header-top__dropdown-item"
+                                    role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i
+                                            class="fa-regular fa-user"></i></span><span
+                                        class="header-top__dropdown-label">Hồ sơ cá nhân</span><span
+                                        class="header-top__dropdown-chev" aria-hidden="true"><i
+                                            class="fa-solid fa-chevron-right"></i></span></a><a href="#"
+                                    class="header-top__dropdown-item" role="menuitem"><span
+                                        class="header-top__dropdown-icon" aria-hidden="true"><i
+                                            class="fa-solid fa-lock"></i></span><span
+                                        class="header-top__dropdown-label">Đổi mật khẩu</span><span
+                                        class="header-top__dropdown-chev" aria-hidden="true"><i
+                                            class="fa-solid fa-chevron-right"></i></span></a>
+                                <div class="header-top__dropdown-divider" role="separator"></div><a href="#"
+                                    class="header-top__dropdown-item header-top__dropdown-item--danger"
+                                    role="menuitem"><span class="header-top__dropdown-icon" aria-hidden="true"><i
+                                            class="fa-solid fa-arrow-right-from-bracket"></i></span><span
+                                        class="header-top__dropdown-label">Đăng xuất</span></a>
+                            </div>
+                        </div>
+                    </div>
                     <span class="header-top__divider" aria-hidden="true"></span>
-                    <button type="button" class="header-top__search" aria-label="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="button" class="header-top__search" aria-label="Tìm kiếm"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
                     <span class="header-top__divider" aria-hidden="true"></span>
-                    <div class="header-top__lang"><img src="./assets/vn.svg" alt="" width="20" height="20"><span>VN</span></div>
+                    <div class="header-top__lang"><img src="./assets/vn.svg" alt="" width="20"
+                            height="20"><span>VN</span></div>
                 </div>
             </div>
         </div>
@@ -342,8 +457,49 @@
                     </a>
                 </div>
             </div>
-            <div class="lanh-dao-img">
+            <div class="list-card-leader">
+                <a class="card-item_leader border-0" href="https://example.com/leader1">
+                    <img src="./assets/Rectangle 3464220.jpg" alt="Club 1" class="card-item-img leader-top">
+                    <h3 class="card-item-lead-title">ĐẠI SỨ, PGS. TS Đặng Đình Quý</h3>
+                    <p class="card-item-lead-position">Chủ tịch</p>
+                </a>
 
+                <a class="card-item_leader border-0" href="https://example.com/leader2">
+                    <img src="./assets/Rectangle 3464220.jpg" alt="Club 1"
+                        class="card-item-img leader-top leader-top-2">
+                    <h3 class="card-item-lead-title">TS Nguyễn Thị Thìn</h3>
+                    <p class="card-item-lead-position">Phó chủ tịch thường trực</p>
+                </a>
+            </div>
+
+            <div class="list-card-leader-2">
+                <a class="card-item_leader border-0" href="https://example.com/member1">
+                    <img src="./assets/Rectangle 3464220.jpg" alt="Club 1" class="card-item-img">
+                    <h3 class="card-item-lead-title">Nguyễn Văn Phúc</h3>
+                    <p class="card-item-lead-position">Chủ tịch DAV Alumni</p>
+                </a>
+
+                <a class="card-item_leader border-0" href="https://example.com/member2">
+                    <img src="./assets/Rectangle 3464220.jpg" alt="Club 1" class="card-item-img">
+                    <h3 class="card-item-lead-title">Nguyễn Văn Phúc</h3>
+                    <p class="card-item-lead-position">Chủ tịch DAV Alumni</p>
+                </a>
+
+                <a class="card-item_leader border-0" href="https://example.com/member2">
+                    <img src="./assets/Rectangle 3464220.jpg" alt="Club 1" class="card-item-img">
+                    <h3 class="card-item-lead-title">Nguyễn Văn Phúc</h3>
+                    <p class="card-item-lead-position">Chủ tịch DAV Alumni</p>
+                </a>
+                <a class="card-item_leader border-0" href="https://example.com/member2">
+                    <img src="./assets/Rectangle 3464220.jpg" alt="Club 1" class="card-item-img">
+                    <h3 class="card-item-lead-title">Nguyễn Văn Phúc</h3>
+                    <p class="card-item-lead-position">Chủ tịch DAV Alumni</p>
+                </a>
+                <a class="card-item_leader border-0" href="https://example.com/member2">
+                    <img src="./assets/Rectangle 3464220.jpg" alt="Club 1" class="card-item-img">
+                    <h3 class="card-item-lead-title">Nguyễn Văn Phúc</h3>
+                    <p class="card-item-lead-position">Chủ tịch DAV Alumni</p>
+                </a>
             </div>
         </div>
     </section>
@@ -829,7 +985,8 @@
                         </span>
                         <div class="site-footer__line-body">
                             <p class="site-footer__line-title">Địa chỉ:</p>
-                            <p class="site-footer__line-text">Số 69 Chùa Láng, phường Láng Thượng, quận Đống Đa, thành phố Hà Nội.</p>
+                            <p class="site-footer__line-text">Số 69 Chùa Láng, phường Láng Thượng, quận Đống Đa, thành
+                                phố Hà Nội.</p>
                         </div>
                     </div>
 
@@ -906,7 +1063,8 @@
                         </li>
                         <li>
                             <a href="#" class="site-footer__social-row">
-                                <span class="site-footer__social-icon site-footer__social-icon--fb-group" aria-hidden="true">
+                                <span class="site-footer__social-icon site-footer__social-icon--fb-group"
+                                    aria-hidden="true">
                                     <i class="fa-solid fa-people-group"></i>
                                 </span>
                                 <span>Group cộng đồng facebook</span>
@@ -914,7 +1072,8 @@
                         </li>
                         <li>
                             <a href="#" class="site-footer__social-row">
-                                <span class="site-footer__social-icon site-footer__social-icon--tiktok" aria-hidden="true">
+                                <span class="site-footer__social-icon site-footer__social-icon--tiktok"
+                                    aria-hidden="true">
                                     <i class="fa-brands fa-tiktok"></i>
                                 </span>
                                 <span>hocvienngoaigiao.dav</span>
@@ -942,6 +1101,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="./js/header-user-menu.js"></script>
+    <script src="./js/mobile-header.js"></script>
 </body>
 
 </html>

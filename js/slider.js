@@ -75,6 +75,15 @@ $('.list-card-club').slick({
       }
     },
     {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
@@ -108,6 +117,15 @@ $('.list-article').slick({
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
@@ -148,6 +166,15 @@ $('.list-job').slick({
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
