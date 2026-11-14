@@ -2706,7 +2706,13 @@ footer::after {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #c72227;
+  background: rgba(199, 34, 39, 0.18);
+  transition: background 0.45s ease, box-shadow 0.45s ease;
+}
+
+.history-timeline.is-passed .history-timeline__line,
+.history-timeline.is-inview .history-timeline__line {
+  background: #C72227;
 }
 
 .history-item {
@@ -2728,8 +2734,18 @@ footer::after {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  background: rgba(199, 34, 39, 0.25);
+  border: 0;
+  transition: background 0.45s ease, transform 0.45s ease;
+}
+
+.history-timeline.is-passed .history-item__dot,
+.history-timeline.is-inview .history-item__dot {
   background: #c72227;
-  border: 4px solid #fff;
+}
+
+.history-timeline.is-inview .history-item__dot {
+  transform: scale(1.08);
 }
 
 .history-item--left .history-item__dot {
@@ -7056,6 +7072,14 @@ footer::after {
   gap: 30px;
 }
 
+.recruitment-filter-toggle {
+  display: none;
+}
+
+.recruitment-filter-overlay {
+  display: none;
+}
+
 .recruitment-filter {
   flex: 0 0 278px;
   width: 278px;
@@ -7074,6 +7098,20 @@ footer::after {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.recruitment-filter__close {
+  display: none;
+  margin-left: auto;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #595959;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .recruitment-filter__head-icon {
@@ -7596,6 +7634,75 @@ footer::after {
   }
 }
 @media (max-width: 767px) {
+  .recruitment-board__layout {
+    position: relative;
+  }
+  .recruitment-filter-toggle {
+    position: fixed;
+    top: 45%;
+    left: 0;
+    z-index: 1030;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 44px;
+    padding: 0 14px 0 12px;
+    border: 0;
+    border-radius: 0 999px 999px 0;
+    background: #0074c2;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  }
+  .recruitment-filter-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1035;
+    display: block;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .recruitment-filter-overlay[hidden] {
+    display: block !important;
+  }
+  .recruitment-filter-overlay--open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .recruitment-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: min(80vw, 320px);
+    height: 100vh;
+    height: 100dvh;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  .recruitment-filter[hidden] {
+    display: block !important;
+  }
+  .recruitment-filter--open {
+    transform: translateX(0);
+  }
+  .recruitment-filter__close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body.recruitment-filter-open {
+    overflow: hidden;
+  }
   .recruitment-hero__inner {
     padding-top: 160px;
   }

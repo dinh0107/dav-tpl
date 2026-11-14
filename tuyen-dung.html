@@ -138,11 +138,22 @@
                 </div>
 
                 <div class="recruitment-board__layout">
-                    <aside class="recruitment-filter" aria-label="Bộ lọc">
+                    <button type="button" class="recruitment-filter-toggle" id="recruitment-filter-toggle"
+                        aria-expanded="false" aria-controls="recruitment-filter-panel" aria-label="Mở bộ lọc">
+                        <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+                        <span>Bộ lọc</span>
+                    </button>
+                    <div class="recruitment-filter-overlay" id="recruitment-filter-overlay" hidden aria-hidden="true"></div>
+                    <aside class="recruitment-filter" id="recruitment-filter-panel" aria-label="Bộ lọc" hidden
+                        aria-hidden="true">
                         <div class="recruitment-filter__head">
                             <span class="recruitment-filter__head-icon" aria-hidden="true"><i
                                     class="fa-solid fa-sliders"></i></span>
                             <span class="recruitment-filter__head-text">Bộ lọc:</span>
+                            <button type="button" class="recruitment-filter__close" id="recruitment-filter-close"
+                                aria-label="Đóng bộ lọc">
+                                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                            </button>
                         </div>
 
                         <details class="recruitment-filter__block" open>
